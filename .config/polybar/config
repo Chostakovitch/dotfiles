@@ -1,0 +1,343 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+[colors]
+background = #1f1f1f
+background-alt = #444
+foreground = #eee
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+accent = #fba922
+
+[bar/chostytopbar]
+width = 100%
+monitor = ${env:MONITOR:HDMI-0}
+enable-ipc = true
+height = 27
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+overline-size = 10
+overline-color = ${self.background}
+underline-size = 10
+underline-color = ${self.background}
+
+border-bottom-size = 1
+border-bottom-color = #333
+
+padding-left = 2
+padding-right = 5
+module-margin-left = 4
+module-margin-right = 4
+
+font-0 = NotoSans-Regular:size=10;2
+font-1 = MaterialIcons-Regular:size=11;4
+font-2 = Symbola:size=10;2
+font-3 = Weather Icons:size=10;3
+
+modules-left = powermenu system-uptime-pretty
+modules-center = xwindow
+modules-right = pulseaudio gmail system-usb-udev date 
+
+locale = fr_FR.UTF-8
+
+tray-position = right
+
+[bar/chostybottombar]
+width = 100%
+monitor = ${env:MONITOR:HDMI-0}
+bottom = true
+enable-ipc = true
+height = 27
+
+background = #1c1c1c
+foreground = #eefafafa
+
+line-size = 3
+line-color = #f00
+
+overline-size = 3
+overline-color = ${colors.accent}
+underline-size = 3
+underline-color = ${colors.accent}
+
+border-top-size = 3
+border-top-color = #3d3d3d
+
+spacing = 3
+padding-left = 0
+padding-right = 5
+module-margin-left = 6
+module-margin-right = 6
+
+font-0 = Roboto:size=10;2
+font-1 = Symbola:size=4;1
+font-2 = Symbola:size=5;1
+font-3 = MaterialIcons-Regular:size=11;4
+font-4 = Font Awesome 5 Free:style=solid:size=10;2
+
+modules-left = i3
+;modules-center = 
+modules-right = wireless-network wired-network updates-arch-combined temperature cpu memory filesystem-custom
+
+locale = fr_FR.UTF-8
+
+[module/xwindow]
+type = internal/xwindow
+label = %{F#ddd}%title%
+label-maxlen=100
+
+[module/wireless-network]
+type = internal/network
+interface = wlp8s0
+interval = 1
+label-connected = %{F#ddd}%essid%    %local_ip%        %{F#77dd77}%{F-}%downspeed%     %{F#dd7777}%{F-}%upspeed%
+label-disconnected = Ethernet disconnected
+label-disconnected-foreground = #66
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+
+index-sort = true
+
+ws-icon-0 = term;
+ws-icon-1 = web;
+ws-icon-2 = code;
+ws-icon-3 = music;
+ws-icon-4 = irssi;
+ws-icon-default = 
+
+label-dimmed-underline = ${root.background}
+
+label-focused = %icon%  %name%
+label-focused-foreground = #f3f3f3
+label-focused-background = #3f3f3f
+;label-focused-underline = #${colors.accent}
+label-focused-underline = #9f78e1
+label-focused-font = 0
+label-focused-padding = 4
+
+label-unfocused = %icon%  %name%
+label-unfocused-underline = #555555
+label-unfocused-font = 0
+label-unfocused-padding = 4
+
+label-urgent = %icon%  %name%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-underline = #9b0a20
+label-urgent-font = 0
+label-urgent-padding = 4
+
+label-visible = %icon%  %name%
+label-visible-foreground = #55ffffff
+label-visible-font = 0
+label-visible-padding = 4
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-underline = ${colors.secondary}
+
+label-layout = %layout%
+label-layout-underline = ${colors.secondary}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /mnt/data
+mount-2 = /mnt/backup
+
+label-mounted = %{F#0a81f5}%mountpoint%%{F-} · %percentage_used%% ·%{F#555} %free% free
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+spacing = 4
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+
+format = <label> <ramp-coreload>
+
+label = %{F#fba922}
+
+ramp-coreload-0 = ▁
+ramp-coreload-0-font = 3
+ramp-coreload-0-foreground = #aaff77
+ramp-coreload-1 = ▂
+ramp-coreload-1-font = 3
+ramp-coreload-1-foreground = #aaff77
+ramp-coreload-2 = ▃
+ramp-coreload-2-font = 3
+ramp-coreload-2-foreground = #aaff77
+ramp-coreload-3 = ▄
+ramp-coreload-3-font = 3
+ramp-coreload-3-foreground = #aaff77
+ramp-coreload-4 = ▅
+ramp-coreload-4-font = 3
+ramp-coreload-4-foreground = #fba922
+ramp-coreload-5 = ▆
+ramp-coreload-5-font = 3
+ramp-coreload-5-foreground = #fba922
+ramp-coreload-6 = ▇
+ramp-coreload-6-font = 3
+ramp-coreload-6-foreground = #ff5555
+ramp-coreload-7 = █
+ramp-coreload-7-font = 3
+ramp-coreload-7-foreground = #ff5555
+
+[module/memory]
+type = internal/memory
+interval = 0.2
+format = <label> <bar-used>
+
+label = %{F#fba922}
+
+bar-used-width = 50
+bar-used-gradient = true
+bar-used-foreground-0 = #55aa55
+bar-used-foreground-1 = #557755
+bar-used-foreground-2 = #f5a70a
+bar-used-foreground-3 = #ff5555
+bar-used-indicator = 
+bar-used-indicator-font = 2
+bar-used-indicator-foreground = #fff
+bar-used-fill =▐
+bar-used-fill-font = 2
+bar-used-empty =▐
+bar-used-empty-font = 2
+bar-used-empty-foreground = #444444
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = " %A %d %B %Y"
+
+time = %H:%M:%S
+
+label = %{F#ddd} %date%       %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+
+format-volume = %{F#ddd}<ramp-volume> <label-volume>
+
+label-volume = %percentage%%
+
+format-muted-prefix = " "
+label-muted = sound muted
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+interval = 0.5
+
+format = <ramp> <label>
+format-warn = <ramp> <label-warn>
+
+label = %{F#77dd77} %{F-} %temperature-c%
+label-warn = %{F#dd7777} %{F-} %temperature-c%
+label-warn-foreground = #dd7777
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+[module/powermenu]
+type = custom/menu
+
+format-padding = 3
+
+label-open = %{F#dd7777}%{F#ddd}
+label-close = %{F#dd7777}%{F#ddd}
+label-separator = " · "
+
+menu-0-0 = Terminate WM
+menu-0-0-foreground = ${colors.accent}
+menu-0-0-exec = bspc quit -1
+menu-0-1 = Reboot
+menu-0-1-foreground = ${colors.accent}
+menu-0-1-exec = menu-open-1
+menu-0-2 = Power off
+menu-0-2-foreground = ${colors.accent}
+menu-0-2-exec = menu-open-2
+
+menu-1-0 = Cancel
+menu-1-0-foreground = ${colors.accent}
+menu-1-0-exec = menu-open-0
+menu-1-1 = Reboot
+menu-1-1-foreground = ${colors.accent}
+menu-1-1-exec = systemctl reboot -i
+
+menu-2-0 = Cancel
+menu-2-0-foreground = ${colors.accent}
+menu-2-0-exec = menu-open-0
+menu-2-1 = Power off
+menu-2-1-foreground = ${colors.accent}
+menu-2-1-exec = systemctl poweroff
+
+
+[module/system-usb-udev]
+type = custom/script
+exec = ~/.config/polybar/scripts/system-usb-udev.sh
+tail = true
+click-left = ~/.config/polybar/scripts/system-usb-udev.sh --mount
+click-right = ~/.config/polybar/scripts/system-usb-udev.sh --unmount
+
+[module/updates-arch-combined]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-arch-combined.sh
+interval = 600
+
+[module/filesystem-custom]
+type = custom/script
+exec = ~/.config/polybar/scripts/filesystem.sh
+interval = 60
+
+[module/gmail]
+type = custom/script
+exec = ~/.config/polybar/scripts/gmail/launch.py
+tail = true
+click-left = xdg-open https://mail.google.com
+
+[module/system-uptime-pretty]
+type = custom/script
+exec = ~/.config/polybar/scripts/system-uptime-pretty.sh
+interval = 30
