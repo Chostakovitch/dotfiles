@@ -1,0 +1,738 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3176,
+	"last_window_id": 4,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 1000.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"os_",
+						"os_use"
+					],
+					[
+						"os",
+						"os_use"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 384.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"em",
+						"Emoji: Insert Emoji"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"instal",
+						"Install Package Control"
+					],
+					[
+						"pack",
+						"Install Package Control"
+					]
+				],
+				"width": 444.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/etc/lightdm/lightdm.conf",
+				"/etc/lightdm/lightdm-gtk-greeter.conf",
+				"/home/chosty/.config/i3/lock/lock.sh",
+				"/home/chosty/.config/polybar/scripts/launch_polybar.sh",
+				"/home/chosty/.config/polybar/scripts/gmail/credentials.json",
+				"/home/chosty/.config/polybar/scripts/gmail/client_secrets.json",
+				"/home/chosty/.oh-my-zsh/oh-my-zsh.sh",
+				"/home/chosty/ls",
+				"/home/chosty/.config/polybar/config",
+				"/home/chosty/.config/polybar/scripts/filesystem.sh",
+				"/home/chosty/.config/polybar/scripts/updates-arch-combined.sh",
+				"/home/chosty/.config/polybar/scripts/gmail/launch.py",
+				"/home/chosty/.config/polybar/scripts/system-uptime-pretty.sh",
+				"/tmp/untitled.sh",
+				"/tmp/test",
+				"/home/chosty/.config/polybar/scripts/system-usb-udev.sh",
+				"/home/chosty/doc/arch/todo",
+				"/home/chosty/.config/polybar/system-usb-udev.sh",
+				"/home/chosty/.config/polybar/pulseaudio-tail.sh",
+				"/home/chosty/.config/polybar/config2"
+			],
+			"find":
+			{
+				"height": 26.557711951
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"volume",
+					"2",
+					"web",
+					"workspace",
+					"$mod+l",
+					"workspace",
+					"PROMPT",
+					"return",
+					"enter",
+					"wired-network",
+					"date",
+					"netwo",
+					"tempera",
+					"netw",
+					"wired",
+					"xwin",
+					" free",
+					"os",
+					"cpu",
+					"= 2",
+					"cpu",
+					"'%'",
+					"os",
+					"4",
+					"free",
+					"memor",
+					"files",
+					"netwo",
+					"padding = 4",
+					"-font = 3",
+					"-font = 4",
+					"-font ",
+					"label",
+					";label-",
+					"border-top",
+					"i3",
+					"cpu",
+					"tempera",
+					"wired",
+					"0",
+					"pulse",
+					"termite",
+					"openwe",
+					"temper",
+					"memory",
+					"files",
+					"power",
+					"files",
+					"tempe",
+					"tempe\t",
+					"filesy",
+					"netwo",
+					"#9f78e1",
+					"netwo",
+					"ip",
+					"powerm",
+					"foreground",
+					"xwin",
+					"wired",
+					"eth",
+					"wired",
+					"cpu",
+					";0",
+					"0",
+					"date",
+					"clock",
+					"ff5555",
+					"4",
+					"i3",
+					"powermenu"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 26.557711951
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 49.0296220633
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 147.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 943.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"os_",
+						"os_use"
+					],
+					[
+						"os",
+						"os_use"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/chosty/.config/i3/config",
+					"settings":
+					{
+						"buffer_size": 5362,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/chosty/doc/arch/todo",
+					"settings":
+					{
+						"buffer_size": 14689,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/chosty/.config/polybar/config",
+					"settings":
+					{
+						"buffer_size": 7498,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "# Path to your oh-my-zsh installation.\nexport ZSH=$HOME/.oh-my-zsh\n\n# Set name of the theme to load. Optionally, if you set this to \"random\"\n# it'll load a random theme each time that oh-my-zsh is loaded.\n# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes\nZSH_THEME=\"agnoster\"\n\n# Uncomment the following line to use case-sensitive completion.\nCASE_SENSITIVE=\"true\"\n\n# Uncomment the following line to use hyphen-insensitive completion. Case\n# sensitive completion must be off. _ and - will be interchangeable.\n# HYPHEN_INSENSITIVE=\"true\"\n\n# Uncomment the following line to disable bi-weekly auto-update checks.\n# DISABLE_AUTO_UPDATE=\"true\"\n\n# Uncomment the following line to change how often to auto-update (in days).\n# export UPDATE_ZSH_DAYS=13\np\n# Uncomment the following line to disable colors in ls.\n# DISABLE_LS_COLORS=\"true\"\n\n# Uncomment the following line to disable auto-setting terminal title.\n# DISABLE_AUTO_TITLE=\"true\"\n\n# Uncomment the following line to enable command auto-correction.\n# ENABLE_CORRECTION=\"true\"\n\n# Uncomment the following line to display red dots whilst waiting for completion.\nCOMPLETION_WAITING_DOTS=\"true\"\n\n# Uncomment the following line if you want to disable marking untracked files\n# under VCS as dirty. This makes repository status check for large repositories\n# much, much faster.\n# DISABLE_UNTRACKED_FILES_DIRTY=\"true\"\n\n# Uncomment the following line if you want to change the command execution time\n# stamp shown in the history command output.\n# The optional three formats: \"mm/dd/yyyy\"|\"dd.mm.yyyy\"|\"yyyy-mm-dd\"\nHIST_STAMPS=\"dd.mm.yyyy\"\n\n# Would you like to use another custom folder than $ZSH/custom?\n# ZSH_CUSTOM=/path/to/new-custom-folder\n\n# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)\n# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/\n# Example format: plugins=(rails git textmate ruby lighthouse)\n# Add wisely, as too many plugins slow down shell startup.\nplugins=(\n  git\n  colored-man-pages\n  colorize\n  command-not-found\n  copydir\n  cp\n  extract\n  history\n  fasd\n  docker\n  rand-quote\n)\n\nsource $ZSH/oh-my-zsh.sh\n\n# User configuration\n\n# export MANPATH=\"/usr/local/man:$MANPATH\"\n\n# You may need to manually set your language environment\nexport LANG=en_US.UTF-8\n\n# Preferred editor for local and remote sessions\nif [[ -n $SSH_CONNECTION ]]; then\n   export EDITOR='nano'\n else\n   export EDITOR='nano'\nfi\n\n# Compilation flags\n# export ARCHFLAGS=\"-arch x86_64\"\n\n# ssh\n# export SSH_KEY_PATH=\"~/.ssh/rsa_id\"\n\n# Do not print user@hostname if user is myself\nDEFAULT_USER=chosto\n\n# Set personal aliases, overriding those provided by oh-my-zsh libs,\n# plugins, and themes. Aliases can be placed here, though oh-my-zsh\n# users are encouraged to define aliases within the ZSH_CUSTOM folder.\n# For a full list of active aliases, run `alias`.\n#\n# Example aliases\n# alias zshconfig=\"mate ~/.zshrc\"\n# alias ohmyzsh=\"mate ~/.oh-my-zsh\"\nalias cat=\"ccat\"\nalias cp=\"cpv\"\n\n# To use when .cfg contains a bare git repo.\n# See this https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/\nalias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'\n\neval \"$(fasd --init auto)\"\n",
+					"file": "/home/chosty/.zshrc",
+					"file_size": 3201,
+					"file_write_time": 131698444699055684,
+					"settings":
+					{
+						"buffer_size": 3202,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 384.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"inst",
+						"Package Control: Install Package"
+					],
+					[
+						"u",
+						"UI: Select Color Scheme"
+					],
+					[
+						"ui",
+						"UI: Select Skin"
+					],
+					[
+						"inslta",
+						"Package Control: Install Package"
+					],
+					[
+						"UI",
+						"UI: Select Skin"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"package",
+						"Package Control: List Packages"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"pac",
+						"Package Control: Install Package"
+					],
+					[
+						"em",
+						"Emoji: Insert Emoji"
+					],
+					[
+						"instal",
+						"Install Package Control"
+					],
+					[
+						"pack",
+						"Install Package Control"
+					]
+				],
+				"width": 444.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/chosty/doc/arch/todo",
+				"/etc/lightdm/lightdm.conf",
+				"/etc/lightdm/lightdm-gtk-greeter.conf",
+				"/home/chosty/.config/i3/lock/lock.sh",
+				"/home/chosty/.config/polybar/scripts/launch_polybar.sh",
+				"/home/chosty/.config/polybar/scripts/gmail/credentials.json",
+				"/home/chosty/.config/polybar/scripts/gmail/client_secrets.json",
+				"/home/chosty/.oh-my-zsh/oh-my-zsh.sh",
+				"/home/chosty/ls",
+				"/home/chosty/.config/polybar/config",
+				"/home/chosty/.config/polybar/scripts/filesystem.sh",
+				"/home/chosty/.config/polybar/scripts/updates-arch-combined.sh",
+				"/home/chosty/.config/polybar/scripts/gmail/launch.py",
+				"/home/chosty/.config/polybar/scripts/system-uptime-pretty.sh",
+				"/tmp/untitled.sh",
+				"/tmp/test",
+				"/home/chosty/.config/polybar/scripts/system-usb-udev.sh",
+				"/home/chosty/.config/polybar/system-usb-udev.sh",
+				"/home/chosty/.config/polybar/pulseaudio-tail.sh",
+				"/home/chosty/.config/polybar/config2"
+			],
+			"find":
+			{
+				"height": 26.557711951
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"volume",
+					"2",
+					"web",
+					"workspace",
+					"$mod+l",
+					"workspace",
+					"PROMPT",
+					"return",
+					"enter",
+					"wired-network",
+					"date",
+					"netwo",
+					"tempera",
+					"netw",
+					"wired",
+					"xwin",
+					" free",
+					"os",
+					"cpu",
+					"= 2",
+					"cpu",
+					"'%'",
+					"os",
+					"4",
+					"free",
+					"memor",
+					"files",
+					"netwo",
+					"padding = 4",
+					"-font = 3",
+					"-font = 4",
+					"-font ",
+					"label",
+					";label-",
+					"border-top",
+					"i3",
+					"cpu",
+					"tempera",
+					"wired",
+					"0",
+					"pulse",
+					"termite",
+					"openwe",
+					"temper",
+					"memory",
+					"files",
+					"power",
+					"files",
+					"tempe",
+					"tempe\t",
+					"filesy",
+					"netwo",
+					"#9f78e1",
+					"netwo",
+					"ip",
+					"powerm",
+					"foreground",
+					"xwin",
+					"wired",
+					"eth",
+					"wired",
+					"cpu",
+					";0",
+					"0",
+					"date",
+					"clock",
+					"ff5555",
+					"4",
+					"i3",
+					"powermenu"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/chosty/.config/i3/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 5362,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										5320,
+										5320
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 8,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 758.937691522,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/chosty/doc/arch/todo",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 14689,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										165,
+										165
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/chosty/.config/polybar/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7498,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1303,
+										1303
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 554.647599591,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/home/chosty/.zshrc",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3202,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										755,
+										755
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.7293156282
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,10,38,953,1038,3840,1080",
+			"project": "",
+			"replace":
+			{
+				"height": 49.0296220633
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 147.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

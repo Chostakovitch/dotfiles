@@ -1,0 +1,3 @@
+[
+	{ "keys": ["ctrl+m"], "command": "toggle_menu" }
+]
