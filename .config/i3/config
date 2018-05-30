@@ -93,8 +93,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-# all windows (except non-float) have a 1px border
-new_window pixel 1
+# no border nor title
+new_window none
 
 # hide borders when touching edges
 hide_edge_borders both
@@ -126,6 +126,9 @@ bindsym $mod+r mode "resize"
 
 #put workspace 1 on main screen
 workspace 1 output DVI-D-0
+workspace 2 output HDMI-0 
+workspace 3 output HDMI-0 
+workspace 4 output DVI-D-0
 
 #start compositor
 exec --no-startup-id compton
@@ -156,6 +159,9 @@ bindsym $mod+Shift+l exec --no-startup-id $Locker && echo mem > /sys/power/state
 exec_always --no-startup-id xset dpms 600
 exec_always --no-startup-id xautolock -time 9 -locker $Locker
 
+#Notifications
+exec_always --no-startup-id dunst
+
 #i3 gaps
 gaps inner 10
 gaps outer 0
@@ -166,3 +172,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set 'Master' 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set 'Master' 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer set 'Master' toggle
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+
+#Open explorer without last tabs
+bindsym Mod4+e exec spacefm -n
+#Open explorer with last tabs (sym to Ctrl+T, Ctrl+Maj+T)
+bindsym Mod4+Shift+e exec spacefm
