@@ -1,6 +1,6 @@
 #!/bin/sh
 
-updates_arch=$(checkupdates | wc -l)
+updates_arch=$(/usr/bin/checkupdates | wc -l)
 
 if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
     updates_aur=0
