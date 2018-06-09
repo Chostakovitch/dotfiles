@@ -1,0 +1,9 @@
+# Ignore everything by default
+/*
+
+# Except user preferences and package list (retrieved automatically by pkg control)
+!.gitignore
+!/Packages
+!/Packages/User
+!/Packages/User/Preferences.sublime-settings
+!/Packages/User/Package Control.sublime-settings
