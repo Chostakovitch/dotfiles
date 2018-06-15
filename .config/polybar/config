@@ -24,6 +24,7 @@ width = 100%
 enable-ipc = true
 height = 27
 foreground = ${colors.foreground}
+background = ${colors.background}
 line-size = 3
 line-color = #f00
 
@@ -32,7 +33,6 @@ monitor = ${env:MONITOR:HDMI-0}
 
 [bar/chostytopbar]
 inherit = bar/common
-background = ${colors.background}
 font-0 = NotoSans-Regular:size=10;2
 font-1 = MaterialIcons-Regular:size=11;4
 font-2 = Symbola:size=10;2
@@ -58,7 +58,6 @@ tray-transparent = false
 
 [bar/chostybottombar]
 inherit = bar/common
-background = #2f343f
 bottom = true
 
 overline-size = 3
@@ -112,7 +111,6 @@ label-dimmed-underline = ${root.background}
 
 label-focused = %icon%  %name%
 label-focused-foreground = #f3f3f3
-label-focused-background = #3f3f3f
 ;label-focused-underline = #${colors.accent}
 label-focused-underline = #9f78e1
 label-focused-font = 0
