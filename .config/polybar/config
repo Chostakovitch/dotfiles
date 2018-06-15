@@ -8,73 +8,63 @@
 ;=====================================================
 
 [colors]
-background = #1f1f1f
-background-alt = #444
+background = #bb2f343f
 foreground = #eee
 foreground-alt = #555
-primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 accent = #fba922
 
-[bar/chostytopbar]
+[global/wm]
+margin-top=50
+
+; Common to top and bottom bars
+[bar/common]
 width = 100%
-monitor = ${env:MONITOR:HDMI-0}
 enable-ipc = true
 height = 27
-
-background = ${colors.background}
 foreground = ${colors.foreground}
-
 line-size = 3
 line-color = #f00
 
-overline-size = 10
-overline-color = ${self.background}
-underline-size = 10
-underline-color = ${self.background}
+locale = fr_FR.UTF-8
+monitor = ${env:MONITOR:HDMI-0}
 
-border-bottom-size = 1
-border-bottom-color = #333
-
-padding-left = 2
-padding-right = 5
-module-margin-left = 4
-module-margin-right = 4
-
+[bar/chostytopbar]
+inherit = bar/common
+background = ${colors.background}
 font-0 = NotoSans-Regular:size=10;2
 font-1 = MaterialIcons-Regular:size=11;4
 font-2 = Symbola:size=10;2
 font-3 = Weather Icons:size=10;3
 
+overline-size = 10
+underline-size = 10
+overline-color = ${self.background}
+underline-color = ${self.background}
+border-bottom-size = 1
+border-bottom-color = #333
+padding-left = 2
+padding-right = 5
+module-margin-left = 4
+module-margin-right = 4
+
 modules-left = powermenu system-uptime-pretty
 modules-center = xwindow
 modules-right = pulseaudio gmail system-usb-udev date 
 
-locale = fr_FR.UTF-8
-
 tray-position = right
+tray-transparent = false
 
 [bar/chostybottombar]
-width = 100%
-monitor = ${env:MONITOR:HDMI-0}
+inherit = bar/common
+background = #2f343f
 bottom = true
-enable-ipc = true
-height = 27
-
-background = #1c1c1c
-foreground = #eefafafa
-
-line-size = 3
-line-color = #f00
 
 overline-size = 3
 overline-color = ${colors.accent}
 underline-size = 3
 underline-color = ${colors.accent}
-
-border-top-size = 3
-border-top-color = #3d3d3d
 
 spacing = 3
 padding-left = 0
@@ -91,8 +81,6 @@ font-4 = Font Awesome 5 Free:style=solid:size=10;2
 modules-left = i3
 ;modules-center = 
 modules-right = wireless-network wired-network updates-arch-combined temperature cpu memory filesystem-custom
-
-locale = fr_FR.UTF-8
 
 [module/xwindow]
 type = internal/xwindow
