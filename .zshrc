@@ -60,6 +60,7 @@ plugins=(
   fasd
   docker
   rand-quote
+  taskwarrior
 )
 
 source $ZSH/oh-my-zsh.sh
