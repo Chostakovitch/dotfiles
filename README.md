@@ -34,10 +34,10 @@ A friend of mine showed me i3, a great and customizable tiling Windows Manager (
 
 With some customization and additionnal component (in this repo), I managed to get a functional and pleasant yet lightweight environment (for me, no brag).
 
-So basically, what I like about this setup is that there is no useful menu bar anywhere and no border. Just windows with gaps between them when multiple windows are on the same screen.
+So basically, what I like about this setup is that there is no "useless" menu bar anywhere and no border. Just windows with gaps between them when multiple windows are on the same screen, and keybord shortcuts for productivity.
 
 I added to the classic Arch/i3WM :
-* A notification daemon (urgency-aware), Dunst, controlled by shortcut (but possibly with mouse).
+* A notification daemon (urgency-aware), Dunst, controlled by shortcuts (but possibly with mouse).
 * A fancy lock screen, with optionnal suspend-to-RAM, either triggered by hotkey or when there is no activity for X minutes.
 * A Display Manager (LightDM), for login and X starting.
 * A great File Explorer (SpaceFM), with hotkey / command-line / screen-split / protocol handlers / events support.
