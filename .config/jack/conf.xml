@@ -4,10 +4,10 @@ JACK settings, as persisted by D-Bus object.
 You probably don't want to edit this because
 it will be overwritten next time jackdbus saves.
 -->
-<!-- Fri Jun 15 22:45:00 2018 -->
+<!-- Sun Jun 17 21:56:25 2018 -->
 <jack>
  <engine>
-  <option name="driver">firewire</option>
+  <option name="driver">alsa</option>
  </engine>
  <drivers>
   <driver name="loopback">
@@ -21,6 +21,14 @@ it will be overwritten next time jackdbus saves.
   <driver name="proxy">
   </driver>
   <driver name="alsa">
+   <option name="device">hw:PCH,0</option>
+   <option name="capture">hw:PCH,0</option>
+   <option name="playback">hw:PCH,0</option>
+   <option name="rate">96000</option>
+   <option name="period">1024</option>
+   <option name="nperiods">3</option>
+   <option name="hwmon">false</option>
+   <option name="duplex">false</option>
   </driver>
   <driver name="net">
   </driver>
