@@ -182,3 +182,7 @@ bindsym Mod4+Shift+e exec spacefm
 
 #Gamma, color temp and brightness night adjuster
 exec --no-startup-id redshift-gtk
+
+# Start JACK server and session manager
+exec --no-startup-id cadence --system-start
+exec --no-startup-id claudia
