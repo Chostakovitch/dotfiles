@@ -2,7 +2,7 @@
 <!--
 ladish Studio configuration.
 -->
-<!-- Mon Jun 18 23:29:37 2018 -->
+<!-- Mon Jun 18 23:33:46 2018 -->
 <studio>
   <jack>
     <conf>
@@ -49,6 +49,10 @@ ladish Studio configuration.
           <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" />
           <port name="Firefox 3/out-1" uuid="422a2ab3-6044-4df3-831e-9418ec6cebfc" />
           <port name="Firefox 3/out-2" uuid="d4fba2c6-636d-4606-a2e9-6eea6b513161" />
+          <port name="PianoTeq/in-1" uuid="282351d7-c0d8-4fa8-80c6-3c59384c6a0d" />
+          <port name="PianoTeq/in-2" uuid="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" />
+          <port name="PianoTeq/out-1" uuid="40933b79-dea6-4057-b82e-a0d806cdd2bf" />
+          <port name="PianoTeq/out-2" uuid="1791e7cb-785e-4e3f-a0eb-ddd958eb443f" />
         </ports>
       </client>
       <client name="a2j" uuid="be23a242-e2b2-11de-b795-002618af5e42">
@@ -78,8 +82,8 @@ ladish Studio configuration.
         <port name="capture_2" uuid="d9143d7e-39ec-469c-84d7-4c31c2ef6133" type="audio" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1331.7253215305452</key>
-        <key name="http://ladish.org/ns/canvas/y">1279.8054181135756</key>
+        <key name="http://ladish.org/ns/canvas/x">1310.2195728723898</key>
+        <key name="http://ladish.org/ns/canvas/y">1007.3992684436082</key>
       </dict>
     </client>
     <client name="Hardware Playback" uuid="b2a0bb06-28d8-4bfe-956e-eb24378f9629" naming="app">
@@ -110,10 +114,14 @@ ladish Studio configuration.
         <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" type="audio" direction="input" />
         <port name="Firefox 3/out-1" uuid="422a2ab3-6044-4df3-831e-9418ec6cebfc" type="audio" direction="output" />
         <port name="Firefox 3/out-2" uuid="d4fba2c6-636d-4606-a2e9-6eea6b513161" type="audio" direction="output" />
+        <port name="PianoTeq/in-1" uuid="282351d7-c0d8-4fa8-80c6-3c59384c6a0d" type="audio" direction="input" />
+        <port name="PianoTeq/in-2" uuid="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" type="audio" direction="input" />
+        <port name="PianoTeq/out-1" uuid="40933b79-dea6-4057-b82e-a0d806cdd2bf" type="audio" direction="output" />
+        <port name="PianoTeq/out-2" uuid="1791e7cb-785e-4e3f-a0eb-ddd958eb443f" type="audio" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1503.3650573291372</key>
-        <key name="http://ladish.org/ns/canvas/y">1114.0725482771682</key>
+        <key name="http://ladish.org/ns/canvas/x">1505.7545849578214</key>
+        <key name="http://ladish.org/ns/canvas/y">1110.4882568341422</key>
       </dict>
     </client>
     <client name="AudioIPC Server" uuid="fbfa733e-1925-44d6-bf5f-33e0d87f4b95" naming="app">
@@ -142,8 +150,8 @@ ladish Studio configuration.
         <port name="UM-ONE MIDI 1" uuid="ccf8a3db-616f-44c0-9750-f8eddd6d3561" type="midi" direction="input" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1325.193240693416</key>
-        <key name="http://ladish.org/ns/canvas/y">1371.120099829309</key>
+        <key name="http://ladish.org/ns/canvas/x">1134.0310303987023</key>
+        <key name="http://ladish.org/ns/canvas/y">1264.786120352875</key>
       </dict>
     </client>
     <client name="PianoTeq" uuid="7124dac0-3dc5-4815-9f9c-0598af722e10" naming="app" app="5e5cbca3-c956-409b-b993-e451b9b7248d">
@@ -156,8 +164,8 @@ ladish Studio configuration.
         <port name="out_5" uuid="82a1e08a-6b06-4d52-a80b-026b7ed1592c" type="audio" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1559.9404349353251</key>
-        <key name="http://ladish.org/ns/canvas/y">1301.9530410347982</key>
+        <key name="http://ladish.org/ns/canvas/x">1361.6096417545596</key>
+        <key name="http://ladish.org/ns/canvas/y">1243.4096141320415</key>
       </dict>
     </client>
   </clients>
@@ -171,8 +179,10 @@ ladish Studio configuration.
     <connection port1="422a2ab3-6044-4df3-831e-9418ec6cebfc" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
     <connection port1="d4fba2c6-636d-4606-a2e9-6eea6b513161" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
     <connection port1="d738957f-03f3-4505-b3fa-64aff59b18b1" port2="ac351c61-ec9a-4e23-bc74-0864e62caae5" />
-    <connection port1="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
-    <connection port1="0e6abe42-b766-4b20-a175-ea4eee0e103c" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" port2="282351d7-c0d8-4fa8-80c6-3c59384c6a0d" />
+    <connection port1="0e6abe42-b766-4b20-a175-ea4eee0e103c" port2="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" />
+    <connection port1="40933b79-dea6-4057-b82e-a0d806cdd2bf" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="1791e7cb-785e-4e3f-a0eb-ddd958eb443f" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
   </connections>
   <applications>
     <application name="Non-Mixer" uuid="59fc4865-805a-4c55-bdae-cbfa4163e186" terminal="false" level="0" autorun="true">non-mixer</application>
