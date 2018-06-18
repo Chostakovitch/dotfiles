@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<!--
+ladish Studio configuration.
+-->
+<!-- Mon Jun 18 23:11:07 2018 -->
+<studio>
+  <jack>
+    <conf>
+      <parameter path="/engine/driver">alsa</parameter>
+      <parameter path="/engine/self-connect-mode">e</parameter>
+      <parameter path="/driver/capture">hw:PCH,0</parameter>
+      <parameter path="/driver/playback">hw:PCH,0</parameter>
+      <parameter path="/driver/nperiods">3</parameter>
+    </conf>
+    <clients>
+      <client name="system" uuid="47be3af1-e01a-4b7a-bb9f-647f9a2fae1d">
+        <ports>
+          <port name="capture_1" uuid="9a4509d9-8fc9-4d3a-a57b-5f1b64988780" />
+          <port name="capture_2" uuid="d9143d7e-39ec-469c-84d7-4c31c2ef6133" />
+          <port name="playback_1" uuid="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+          <port name="playback_2" uuid="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+          <port name="playback_3" uuid="5a59a24b-eea1-4d55-a683-bf4f5a2f9940" />
+          <port name="playback_4" uuid="4436d2ba-8be0-4cdf-aaa7-7ab2650953c5" />
+          <port name="playback_5" uuid="ed2326ce-e1fa-4be6-8bd5-fc2a3801a676" />
+          <port name="playback_6" uuid="1ed3fd7e-74fb-4f2b-9377-7798fd157134" />
+        </ports>
+      </client>
+      <client name="claudia" uuid="303df630-cc0a-4651-a95a-04cb4f18586f">
+        <ports>
+        </ports>
+      </client>
+      <client name="AudioIPC Server" uuid="8f68b8fd-7e96-4fb4-b268-e064bfe417f2">
+        <ports>
+          <port name="AudioStream_0_out_0" uuid="6c95c1cc-ec77-40e2-94b6-672a380b12a2" />
+          <port name="AudioStream_0_out_1" uuid="d583e957-c12e-4bfb-9e8c-265ffc762129" />
+          <port name="AudioStream_1_out_0" uuid="f3d82578-3a47-46a6-9f9a-3b8cccbfe98b" />
+          <port name="AudioStream_1_out_1" uuid="dddf4a88-d945-4755-b3b9-4f1d14d6eaa8" />
+        </ports>
+      </client>
+      <client name="Non-Mixer" uuid="d2433121-a499-4f87-b797-0c3490862242">
+        <ports>
+          <port name="Firefox 1/in-1" uuid="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" />
+          <port name="Firefox 1/out-1" uuid="3ad57d22-0974-4ac6-84d4-968667d5f5c1" />
+          <port name="Firefox 1/in-2" uuid="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" />
+          <port name="Firefox 1/out-2" uuid="86da3885-acd7-4ab8-ba3f-75d6125066b2" />
+          <port name="Firefox 2/in-1" uuid="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" />
+          <port name="Firefox 2/in-2" uuid="514c5b15-ce98-4f9a-8ccb-b63ef73a5b70" />
+          <port name="Firefox 2/out-1" uuid="c9fcde4c-3023-4ca6-a887-025dbfcabd96" />
+          <port name="Firefox 2/out-2" uuid="84effb46-ae87-4b7e-8ab3-590d4f4cd420" />
+          <port name="Firefox 3/in-1" uuid="559a2471-e766-4448-878c-9205e5945cca" />
+          <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" />
+          <port name="Firefox 3/out-1" uuid="422a2ab3-6044-4df3-831e-9418ec6cebfc" />
+          <port name="Firefox 3/out-2" uuid="d4fba2c6-636d-4606-a2e9-6eea6b513161" />
+        </ports>
+      </client>
+    </clients>
+  </jack>
+  <clients>
+    <client name="Hardware Capture" uuid="47c1cd18-7b21-4389-bec4-6e0658e1d6b1" naming="app">
+      <ports>
+        <port name="capture_1" uuid="9a4509d9-8fc9-4d3a-a57b-5f1b64988780" type="audio" direction="output" />
+        <port name="capture_2" uuid="d9143d7e-39ec-469c-84d7-4c31c2ef6133" type="audio" direction="output" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1331.7253215305452</key>
+        <key name="http://ladish.org/ns/canvas/y">1279.8054181135756</key>
+      </dict>
+    </client>
+    <client name="Hardware Playback" uuid="b2a0bb06-28d8-4bfe-956e-eb24378f9629" naming="app">
+      <ports>
+        <port name="playback_1" uuid="ca987391-1a8c-4a90-965b-e9608a42d3ef" type="audio" direction="input" />
+        <port name="playback_2" uuid="27d0c814-bfc1-441d-82b1-d111cc3a25a2" type="audio" direction="input" />
+        <port name="playback_3" uuid="5a59a24b-eea1-4d55-a683-bf4f5a2f9940" type="audio" direction="input" />
+        <port name="playback_4" uuid="4436d2ba-8be0-4cdf-aaa7-7ab2650953c5" type="audio" direction="input" />
+        <port name="playback_5" uuid="ed2326ce-e1fa-4be6-8bd5-fc2a3801a676" type="audio" direction="input" />
+        <port name="playback_6" uuid="1ed3fd7e-74fb-4f2b-9377-7798fd157134" type="audio" direction="input" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1713.6407130545563</key>
+        <key name="http://ladish.org/ns/canvas/y">1131.5721035671463</key>
+      </dict>
+    </client>
+    <client name="Non-Mixer" uuid="90b7abd9-9a93-41fa-8262-96dd8f9452ef" naming="app" app="59fc4865-805a-4c55-bdae-cbfa4163e186">
+      <ports>
+        <port name="Firefox 1/in-1" uuid="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" type="audio" direction="input" />
+        <port name="Firefox 1/out-1" uuid="3ad57d22-0974-4ac6-84d4-968667d5f5c1" type="audio" direction="output" />
+        <port name="Firefox 1/in-2" uuid="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" type="audio" direction="input" />
+        <port name="Firefox 1/out-2" uuid="86da3885-acd7-4ab8-ba3f-75d6125066b2" type="audio" direction="output" />
+        <port name="Firefox 2/in-1" uuid="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" type="audio" direction="input" />
+        <port name="Firefox 2/in-2" uuid="514c5b15-ce98-4f9a-8ccb-b63ef73a5b70" type="audio" direction="input" />
+        <port name="Firefox 2/out-1" uuid="c9fcde4c-3023-4ca6-a887-025dbfcabd96" type="audio" direction="output" />
+        <port name="Firefox 2/out-2" uuid="84effb46-ae87-4b7e-8ab3-590d4f4cd420" type="audio" direction="output" />
+        <port name="Firefox 3/in-1" uuid="559a2471-e766-4448-878c-9205e5945cca" type="audio" direction="input" />
+        <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" type="audio" direction="input" />
+        <port name="Firefox 3/out-1" uuid="422a2ab3-6044-4df3-831e-9418ec6cebfc" type="audio" direction="output" />
+        <port name="Firefox 3/out-2" uuid="d4fba2c6-636d-4606-a2e9-6eea6b513161" type="audio" direction="output" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1503.3650573291372</key>
+        <key name="http://ladish.org/ns/canvas/y">1114.0725482771682</key>
+      </dict>
+    </client>
+    <client name="AudioIPC Server" uuid="fbfa733e-1925-44d6-bf5f-33e0d87f4b95" naming="app">
+      <ports>
+        <port name="AudioStream_0_out_0" uuid="6c95c1cc-ec77-40e2-94b6-672a380b12a2" type="audio" direction="output" />
+        <port name="AudioStream_0_out_1" uuid="d583e957-c12e-4bfb-9e8c-265ffc762129" type="audio" direction="output" />
+        <port name="AudioStream_1_out_0" uuid="f3d82578-3a47-46a6-9f9a-3b8cccbfe98b" type="audio" direction="output" />
+        <port name="AudioStream_1_out_1" uuid="dddf4a88-d945-4755-b3b9-4f1d14d6eaa8" type="audio" direction="output" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1321.2097684352518</key>
+        <key name="http://ladish.org/ns/canvas/y">1130.6454698741009</key>
+      </dict>
+    </client>
+  </clients>
+  <connections>
+    <connection port1="3ad57d22-0974-4ac6-84d4-968667d5f5c1" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="86da3885-acd7-4ab8-ba3f-75d6125066b2" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="c9fcde4c-3023-4ca6-a887-025dbfcabd96" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="84effb46-ae87-4b7e-8ab3-590d4f4cd420" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="f3d82578-3a47-46a6-9f9a-3b8cccbfe98b" port2="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" />
+    <connection port1="dddf4a88-d945-4755-b3b9-4f1d14d6eaa8" port2="514c5b15-ce98-4f9a-8ccb-b63ef73a5b70" />
+    <connection port1="6c95c1cc-ec77-40e2-94b6-672a380b12a2" port2="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" />
+    <connection port1="d583e957-c12e-4bfb-9e8c-265ffc762129" port2="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" />
+    <connection port1="422a2ab3-6044-4df3-831e-9418ec6cebfc" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="d4fba2c6-636d-4606-a2e9-6eea6b513161" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+  </connections>
+  <applications>
+    <application name="Non-Mixer" uuid="59fc4865-805a-4c55-bdae-cbfa4163e186" terminal="false" level="0" autorun="true">non-mixer</application>
+  </applications>
+</studio>

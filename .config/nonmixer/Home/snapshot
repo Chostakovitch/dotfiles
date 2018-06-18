@@ -1,0 +1,16 @@
+{
+	Spatialization_Console 0x14 create :range 1.000000 :projection 1 :shown 0
+	Group 0xD create :name "Home"
+	Mixer_Strip 0x1 create :name "Firefox 1" :width "narrow" :tab "fader" :color 424238335 :gain_mode 0 :mute_mode 0 :group 0xD :auto_input "" :manual_connection 0
+	Chain 0x2 create :strip 0x1 :tab "controls"
+	JACK_Module 0x3 create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x2 :active 1
+	Gain_Module 0x4 create :parameter_values "-8.250000:0.000000" :is_default 1 :chain 0x2 :active 1
+	Meter_Module 0x5 create :is_default 1 :chain 0x2 :active 1
+	JACK_Module 0x6 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x2 :active 1
+	Mixer_Strip 0xE create :name "Firefox 2" :width "narrow" :tab "fader" :color 596516649 :gain_mode 0 :mute_mode 0 :group 0xD :auto_input "" :manual_connection 0
+	Chain 0xF create :strip 0xE :tab "chain"
+	JACK_Module 0x10 create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0xF :active 1
+	Gain_Module 0x11 create :parameter_values "0.000000:0.000000" :is_default 1 :chain 0xF :active 1
+	Meter_Module 0x12 create :is_default 1 :chain 0xF :active 1
+	JACK_Module 0x13 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0xF :active 1
+}
