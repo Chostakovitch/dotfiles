@@ -2,7 +2,7 @@
 <!--
 ladish Studio configuration.
 -->
-<!-- Mon Jun 18 23:11:07 2018 -->
+<!-- Mon Jun 18 23:29:37 2018 -->
 <studio>
   <jack>
     <conf>
@@ -33,8 +33,6 @@ ladish Studio configuration.
         <ports>
           <port name="AudioStream_0_out_0" uuid="6c95c1cc-ec77-40e2-94b6-672a380b12a2" />
           <port name="AudioStream_0_out_1" uuid="d583e957-c12e-4bfb-9e8c-265ffc762129" />
-          <port name="AudioStream_1_out_0" uuid="f3d82578-3a47-46a6-9f9a-3b8cccbfe98b" />
-          <port name="AudioStream_1_out_1" uuid="dddf4a88-d945-4755-b3b9-4f1d14d6eaa8" />
         </ports>
       </client>
       <client name="Non-Mixer" uuid="d2433121-a499-4f87-b797-0c3490862242">
@@ -51,6 +49,24 @@ ladish Studio configuration.
           <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" />
           <port name="Firefox 3/out-1" uuid="422a2ab3-6044-4df3-831e-9418ec6cebfc" />
           <port name="Firefox 3/out-2" uuid="d4fba2c6-636d-4606-a2e9-6eea6b513161" />
+        </ports>
+      </client>
+      <client name="a2j" uuid="be23a242-e2b2-11de-b795-002618af5e42">
+        <ports>
+          <port name="Midi Through (capture): Midi Through Port-0" uuid="ae31b01f-4cb5-419b-8493-a2deedd1979b" />
+          <port name="Midi Through (playback): Midi Through Port-0" uuid="6cff6824-7ed6-4b8b-82df-600e394713dd" />
+          <port name="UM-ONE (capture): UM-ONE MIDI 1" uuid="d738957f-03f3-4505-b3fa-64aff59b18b1" />
+          <port name="UM-ONE (playback): UM-ONE MIDI 1" uuid="ccf8a3db-616f-44c0-9750-f8eddd6d3561" />
+        </ports>
+      </client>
+      <client name="PianoTeq" uuid="37ab2b80-8ea4-405b-9e80-eebb2578e0ed">
+        <ports>
+          <port name="midi_in" uuid="ac351c61-ec9a-4e23-bc74-0864e62caae5" />
+          <port name="out_1" uuid="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" />
+          <port name="out_2" uuid="0e6abe42-b766-4b20-a175-ea4eee0e103c" />
+          <port name="out_3" uuid="22f44c48-df2e-49c2-9d72-9154107e8f0c" />
+          <port name="out_4" uuid="d42d7be1-f569-467f-baf9-ba4f7bd078bf" />
+          <port name="out_5" uuid="82a1e08a-6b06-4d52-a80b-026b7ed1592c" />
         </ports>
       </client>
     </clients>
@@ -104,12 +120,44 @@ ladish Studio configuration.
       <ports>
         <port name="AudioStream_0_out_0" uuid="6c95c1cc-ec77-40e2-94b6-672a380b12a2" type="audio" direction="output" />
         <port name="AudioStream_0_out_1" uuid="d583e957-c12e-4bfb-9e8c-265ffc762129" type="audio" direction="output" />
-        <port name="AudioStream_1_out_0" uuid="f3d82578-3a47-46a6-9f9a-3b8cccbfe98b" type="audio" direction="output" />
-        <port name="AudioStream_1_out_1" uuid="dddf4a88-d945-4755-b3b9-4f1d14d6eaa8" type="audio" direction="output" />
       </ports>
       <dict>
         <key name="http://ladish.org/ns/canvas/x">1321.2097684352518</key>
         <key name="http://ladish.org/ns/canvas/y">1130.6454698741009</key>
+      </dict>
+    </client>
+    <client name="Midi Through" uuid="dc1342f3-91d9-4c74-afff-7378cc022d9c" naming="app">
+      <ports>
+        <port name="Midi Through Port-0" uuid="ae31b01f-4cb5-419b-8493-a2deedd1979b" type="midi" direction="output" />
+        <port name="Midi Through Port-0" uuid="6cff6824-7ed6-4b8b-82df-600e394713dd" type="midi" direction="input" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1323.6639430110592</key>
+        <key name="http://ladish.org/ns/canvas/y">1466.2852192239015</key>
+      </dict>
+    </client>
+    <client name="UM-ONE" uuid="c8b16f12-fcd1-40bf-abbf-311260d9e656" naming="app">
+      <ports>
+        <port name="UM-ONE MIDI 1" uuid="d738957f-03f3-4505-b3fa-64aff59b18b1" type="midi" direction="output" />
+        <port name="UM-ONE MIDI 1" uuid="ccf8a3db-616f-44c0-9750-f8eddd6d3561" type="midi" direction="input" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1325.193240693416</key>
+        <key name="http://ladish.org/ns/canvas/y">1371.120099829309</key>
+      </dict>
+    </client>
+    <client name="PianoTeq" uuid="7124dac0-3dc5-4815-9f9c-0598af722e10" naming="app" app="5e5cbca3-c956-409b-b993-e451b9b7248d">
+      <ports>
+        <port name="midi_in" uuid="ac351c61-ec9a-4e23-bc74-0864e62caae5" type="midi" direction="input" />
+        <port name="out_1" uuid="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" type="audio" direction="output" />
+        <port name="out_2" uuid="0e6abe42-b766-4b20-a175-ea4eee0e103c" type="audio" direction="output" />
+        <port name="out_3" uuid="22f44c48-df2e-49c2-9d72-9154107e8f0c" type="audio" direction="output" />
+        <port name="out_4" uuid="d42d7be1-f569-467f-baf9-ba4f7bd078bf" type="audio" direction="output" />
+        <port name="out_5" uuid="82a1e08a-6b06-4d52-a80b-026b7ed1592c" type="audio" direction="output" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1559.9404349353251</key>
+        <key name="http://ladish.org/ns/canvas/y">1301.9530410347982</key>
       </dict>
     </client>
   </clients>
@@ -118,14 +166,16 @@ ladish Studio configuration.
     <connection port1="86da3885-acd7-4ab8-ba3f-75d6125066b2" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
     <connection port1="c9fcde4c-3023-4ca6-a887-025dbfcabd96" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
     <connection port1="84effb46-ae87-4b7e-8ab3-590d4f4cd420" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
-    <connection port1="f3d82578-3a47-46a6-9f9a-3b8cccbfe98b" port2="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" />
-    <connection port1="dddf4a88-d945-4755-b3b9-4f1d14d6eaa8" port2="514c5b15-ce98-4f9a-8ccb-b63ef73a5b70" />
     <connection port1="6c95c1cc-ec77-40e2-94b6-672a380b12a2" port2="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" />
     <connection port1="d583e957-c12e-4bfb-9e8c-265ffc762129" port2="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" />
     <connection port1="422a2ab3-6044-4df3-831e-9418ec6cebfc" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
     <connection port1="d4fba2c6-636d-4606-a2e9-6eea6b513161" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="d738957f-03f3-4505-b3fa-64aff59b18b1" port2="ac351c61-ec9a-4e23-bc74-0864e62caae5" />
+    <connection port1="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="0e6abe42-b766-4b20-a175-ea4eee0e103c" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
   </connections>
   <applications>
     <application name="Non-Mixer" uuid="59fc4865-805a-4c55-bdae-cbfa4163e186" terminal="false" level="0" autorun="true">non-mixer</application>
+    <application name="PianoTeq" uuid="5e5cbca3-c956-409b-b993-e451b9b7248d" terminal="false" level="0" autorun="true">pianoteq</application>
   </applications>
 </studio>
