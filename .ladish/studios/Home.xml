@@ -2,7 +2,7 @@
 <!--
 ladish Studio configuration.
 -->
-<!-- Mon Jun 18 23:33:46 2018 -->
+<!-- Tue Jun 19 19:56:25 2018 -->
 <studio>
   <jack>
     <conf>
@@ -37,8 +37,20 @@ ladish Studio configuration.
       </client>
       <client name="Non-Mixer" uuid="d2433121-a499-4f87-b797-0c3490862242">
         <ports>
+          <port name="in-1" uuid="ed50f315-73cd-4d8f-8e1a-e991bf0a347b" />
+          <port name="out-1" uuid="d3dc0c80-c8fc-4ffd-b2d8-25f4dde5b131" />
           <port name="Firefox 1/in-1" uuid="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" />
           <port name="Firefox 1/out-1" uuid="3ad57d22-0974-4ac6-84d4-968667d5f5c1" />
+          <port name="Firefox 2/in-1" uuid="2b128134-6349-48c6-9bad-a2281e5e63ba" />
+          <port name="Firefox 2/out-1" uuid="a629b041-4ce5-4049-87e2-7e90a86d92bc" />
+          <port name="Firefox 2/in-2" uuid="d7e587b0-a51c-4ddc-b980-e8a4e74474d2" />
+          <port name="Firefox 2/out-2" uuid="1b5a9600-8a6a-4a9a-88ad-3be0741efbad" />
+          <port name="Deezer/in-3" uuid="c7ee38aa-4684-4286-adb5-51887165539f" />
+          <port name="Deezer/out-3" uuid="37d5e06e-abaf-4dd4-b37a-4ee997956698" />
+          <port name="Deezer/in-4" uuid="2d6eeeb4-95d3-4800-aed7-628fc7b210c3" />
+          <port name="Deezer/out-4" uuid="87a716b2-c6cc-458a-a951-40ad6392fb90" />
+          <port name="Deezer/in-5" uuid="d9e7029b-8749-4527-bee3-65932444d956" />
+          <port name="Deezer/out-5" uuid="743e3fb1-58ce-40cf-92ba-0749b08915c4" />
           <port name="Firefox 1/in-2" uuid="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" />
           <port name="Firefox 1/out-2" uuid="86da3885-acd7-4ab8-ba3f-75d6125066b2" />
           <port name="Firefox 2/in-1" uuid="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" />
@@ -53,6 +65,10 @@ ladish Studio configuration.
           <port name="PianoTeq/in-2" uuid="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" />
           <port name="PianoTeq/out-1" uuid="40933b79-dea6-4057-b82e-a0d806cdd2bf" />
           <port name="PianoTeq/out-2" uuid="1791e7cb-785e-4e3f-a0eb-ddd958eb443f" />
+          <port name="VLC/in-1" uuid="c721c9d5-17b8-4abb-97c6-4944ffb728eb" />
+          <port name="VLC/in-2" uuid="f47aae0e-d4c0-448e-8f26-6c280629231e" />
+          <port name="VLC/out-1" uuid="2156b9e4-4307-4693-88b2-f3e5ae0c88c6" />
+          <port name="VLC/out-2" uuid="1e4afd70-a8a1-4497-891a-d249fcfe14a8" />
         </ports>
       </client>
       <client name="a2j" uuid="be23a242-e2b2-11de-b795-002618af5e42">
@@ -71,6 +87,46 @@ ladish Studio configuration.
           <port name="out_3" uuid="22f44c48-df2e-49c2-9d72-9154107e8f0c" />
           <port name="out_4" uuid="d42d7be1-f569-467f-baf9-ba4f7bd078bf" />
           <port name="out_5" uuid="82a1e08a-6b06-4d52-a80b-026b7ed1592c" />
+        </ports>
+      </client>
+      <client name="Non-Mixer (Home)" uuid="9d39d6d6-4653-4b8a-bd5f-681972839b42">
+        <ports>
+          <port name="Firefox 1/in-1" uuid="89d9dc31-5c1b-4525-93a5-a38df1f2324a" />
+          <port name="Firefox 1/in-2" uuid="da5eab91-9760-4a3a-bc8d-d2da63c87f40" />
+          <port name="Firefox 1/out-1" uuid="bd8b1a8c-f656-4148-a016-e2fa2de50933" />
+          <port name="Firefox 1/out-2" uuid="f94be23b-55c9-45dc-ad9a-98c83f66bc57" />
+          <port name="Firefox 2/in-1" uuid="504a97ea-9f1e-466a-81aa-5523a0f164d2" />
+          <port name="Firefox 2/in-2" uuid="a92bfe51-21a7-41d0-926f-26dd40418e8a" />
+          <port name="Firefox 2/out-1" uuid="95ead2c1-c0cb-4153-91cd-f8995fe8c55b" />
+          <port name="Firefox 2/out-2" uuid="b487aa32-f5c7-4c62-8e3d-48b54fd0d07b" />
+          <port name="Firefox 3/in-1" uuid="1b1ddb60-43de-4b6a-84f0-4fbfe3eaefc5" />
+          <port name="Firefox 3/in-2" uuid="33f82c57-d7c8-4d99-9c1f-7dd2a6a5b34c" />
+          <port name="Firefox 3/out-1" uuid="e62f4162-4e48-4b71-9288-9e9ef5c74c07" />
+          <port name="Firefox 3/out-2" uuid="fa30bea4-ac7d-452c-a0e5-db58e28eff70" />
+          <port name="PianoTeq/in-1" uuid="e0a31408-d301-4560-8148-add9502ab714" />
+          <port name="PianoTeq/in-2" uuid="34f3ece7-7ac7-440f-8dd3-7430531c6bcd" />
+          <port name="PianoTeq/out-1" uuid="4e7adae2-492a-42d9-b03e-c549c26e02e2" />
+          <port name="PianoTeq/out-2" uuid="b453db0b-cb26-4fab-bfdb-25ae88725f2e" />
+          <port name="VLC/in-1" uuid="86029125-84db-471f-a389-c60d0dee3a62" />
+          <port name="VLC/in-2" uuid="239faf51-66ca-4459-9c40-d02633fdbfeb" />
+          <port name="VLC/out-1" uuid="1c7ddb3d-ecbc-470c-97e6-5ee9ac9506e3" />
+          <port name="VLC/out-2" uuid="238cb1a3-80e8-48eb-a625-ca2c1e3e68fd" />
+        </ports>
+      </client>
+      <client name="cadence-aloop-daemon" uuid="c45122ec-bf37-4dac-9c26-28e5ff5871f5">
+        <ports>
+        </ports>
+      </client>
+      <client name="jack2alsa" uuid="95196afa-9654-476c-a59f-525d15111951">
+        <ports>
+          <port name="playback_1" uuid="80e132cd-c3c8-4270-ad16-dc3fce84a65a" />
+          <port name="playback_2" uuid="cbfd61cf-a13c-41e5-82e9-3a20118420a7" />
+        </ports>
+      </client>
+      <client name="alsa2jack" uuid="dff23d1b-248a-477a-8514-e0cff9d97320">
+        <ports>
+          <port name="capture_1" uuid="98e381cd-0676-40cf-8ae8-65f80bbf4bb1" />
+          <port name="capture_2" uuid="f65d3789-b73a-41b4-a0ae-f24076677272" />
         </ports>
       </client>
     </clients>
@@ -102,26 +158,42 @@ ladish Studio configuration.
     </client>
     <client name="Non-Mixer" uuid="90b7abd9-9a93-41fa-8262-96dd8f9452ef" naming="app" app="59fc4865-805a-4c55-bdae-cbfa4163e186">
       <ports>
-        <port name="Firefox 1/in-1" uuid="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" type="audio" direction="input" />
+        <port name="in-1" uuid="ed50f315-73cd-4d8f-8e1a-e991bf0a347b" type="audio" direction="output" />
+        <port name="out-1" uuid="d3dc0c80-c8fc-4ffd-b2d8-25f4dde5b131" type="audio" direction="output" />
+        <port name="Firefox 1/in-1" uuid="d57e8dde-a16d-4d2a-80f9-1e20d7b6c9a6" type="audio" direction="output" />
         <port name="Firefox 1/out-1" uuid="3ad57d22-0974-4ac6-84d4-968667d5f5c1" type="audio" direction="output" />
-        <port name="Firefox 1/in-2" uuid="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" type="audio" direction="input" />
+        <port name="Firefox 2/in-1" uuid="2b128134-6349-48c6-9bad-a2281e5e63ba" type="audio" direction="output" />
+        <port name="Firefox 2/out-1" uuid="a629b041-4ce5-4049-87e2-7e90a86d92bc" type="audio" direction="output" />
+        <port name="Firefox 2/in-2" uuid="d7e587b0-a51c-4ddc-b980-e8a4e74474d2" type="audio" direction="output" />
+        <port name="Firefox 2/out-2" uuid="1b5a9600-8a6a-4a9a-88ad-3be0741efbad" type="audio" direction="output" />
+        <port name="Deezer/in-3" uuid="c7ee38aa-4684-4286-adb5-51887165539f" type="audio" direction="output" />
+        <port name="Deezer/out-3" uuid="37d5e06e-abaf-4dd4-b37a-4ee997956698" type="audio" direction="output" />
+        <port name="Deezer/in-4" uuid="2d6eeeb4-95d3-4800-aed7-628fc7b210c3" type="audio" direction="output" />
+        <port name="Deezer/out-4" uuid="87a716b2-c6cc-458a-a951-40ad6392fb90" type="audio" direction="output" />
+        <port name="Deezer/in-5" uuid="d9e7029b-8749-4527-bee3-65932444d956" type="audio" direction="output" />
+        <port name="Deezer/out-5" uuid="743e3fb1-58ce-40cf-92ba-0749b08915c4" type="audio" direction="output" />
+        <port name="Firefox 1/in-2" uuid="ee9db34e-9b2a-4f13-abed-ad79795f5a0a" type="audio" direction="output" />
         <port name="Firefox 1/out-2" uuid="86da3885-acd7-4ab8-ba3f-75d6125066b2" type="audio" direction="output" />
-        <port name="Firefox 2/in-1" uuid="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" type="audio" direction="input" />
-        <port name="Firefox 2/in-2" uuid="514c5b15-ce98-4f9a-8ccb-b63ef73a5b70" type="audio" direction="input" />
+        <port name="Firefox 2/in-1" uuid="0161dd5d-3c63-4af8-8fa0-3da86f0e93c4" type="audio" direction="output" />
+        <port name="Firefox 2/in-2" uuid="514c5b15-ce98-4f9a-8ccb-b63ef73a5b70" type="audio" direction="output" />
         <port name="Firefox 2/out-1" uuid="c9fcde4c-3023-4ca6-a887-025dbfcabd96" type="audio" direction="output" />
         <port name="Firefox 2/out-2" uuid="84effb46-ae87-4b7e-8ab3-590d4f4cd420" type="audio" direction="output" />
-        <port name="Firefox 3/in-1" uuid="559a2471-e766-4448-878c-9205e5945cca" type="audio" direction="input" />
-        <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" type="audio" direction="input" />
+        <port name="Firefox 3/in-1" uuid="559a2471-e766-4448-878c-9205e5945cca" type="audio" direction="output" />
+        <port name="Firefox 3/in-2" uuid="01ac628c-1a56-4b41-968d-daf0eaa50ffd" type="audio" direction="output" />
         <port name="Firefox 3/out-1" uuid="422a2ab3-6044-4df3-831e-9418ec6cebfc" type="audio" direction="output" />
         <port name="Firefox 3/out-2" uuid="d4fba2c6-636d-4606-a2e9-6eea6b513161" type="audio" direction="output" />
-        <port name="PianoTeq/in-1" uuid="282351d7-c0d8-4fa8-80c6-3c59384c6a0d" type="audio" direction="input" />
-        <port name="PianoTeq/in-2" uuid="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" type="audio" direction="input" />
+        <port name="PianoTeq/in-1" uuid="282351d7-c0d8-4fa8-80c6-3c59384c6a0d" type="audio" direction="output" />
+        <port name="PianoTeq/in-2" uuid="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" type="audio" direction="output" />
         <port name="PianoTeq/out-1" uuid="40933b79-dea6-4057-b82e-a0d806cdd2bf" type="audio" direction="output" />
         <port name="PianoTeq/out-2" uuid="1791e7cb-785e-4e3f-a0eb-ddd958eb443f" type="audio" direction="output" />
+        <port name="VLC/in-1" uuid="c721c9d5-17b8-4abb-97c6-4944ffb728eb" type="audio" direction="output" />
+        <port name="VLC/in-2" uuid="f47aae0e-d4c0-448e-8f26-6c280629231e" type="audio" direction="output" />
+        <port name="VLC/out-1" uuid="2156b9e4-4307-4693-88b2-f3e5ae0c88c6" type="audio" direction="output" />
+        <port name="VLC/out-2" uuid="1e4afd70-a8a1-4497-891a-d249fcfe14a8" type="audio" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1505.7545849578214</key>
-        <key name="http://ladish.org/ns/canvas/y">1110.4882568341422</key>
+        <key name="http://ladish.org/ns/canvas/x">1508.2101294754946</key>
+        <key name="http://ladish.org/ns/canvas/y">1092.0716729515952</key>
       </dict>
     </client>
     <client name="AudioIPC Server" uuid="fbfa733e-1925-44d6-bf5f-33e0d87f4b95" naming="app">
@@ -164,12 +236,56 @@ ladish Studio configuration.
         <port name="out_5" uuid="82a1e08a-6b06-4d52-a80b-026b7ed1592c" type="audio" direction="output" />
       </ports>
       <dict>
-        <key name="http://ladish.org/ns/canvas/x">1361.6096417545596</key>
-        <key name="http://ladish.org/ns/canvas/y">1243.4096141320415</key>
+        <key name="http://ladish.org/ns/canvas/x">1367.7485030487421</key>
+        <key name="http://ladish.org/ns/canvas/y">1288.83718770899</key>
       </dict>
+    </client>
+    <client name="Non-Mixer (Home)" uuid="0422dde3-4c4d-433d-b8fd-ffe2cf60a84d" naming="app">
+      <ports>
+        <port name="Firefox 1/in-1" uuid="89d9dc31-5c1b-4525-93a5-a38df1f2324a" type="audio" direction="input" />
+        <port name="Firefox 1/in-2" uuid="da5eab91-9760-4a3a-bc8d-d2da63c87f40" type="audio" direction="input" />
+        <port name="Firefox 1/out-1" uuid="bd8b1a8c-f656-4148-a016-e2fa2de50933" type="audio" direction="output" />
+        <port name="Firefox 1/out-2" uuid="f94be23b-55c9-45dc-ad9a-98c83f66bc57" type="audio" direction="output" />
+        <port name="Firefox 2/in-1" uuid="504a97ea-9f1e-466a-81aa-5523a0f164d2" type="audio" direction="input" />
+        <port name="Firefox 2/in-2" uuid="a92bfe51-21a7-41d0-926f-26dd40418e8a" type="audio" direction="input" />
+        <port name="Firefox 2/out-1" uuid="95ead2c1-c0cb-4153-91cd-f8995fe8c55b" type="audio" direction="output" />
+        <port name="Firefox 2/out-2" uuid="b487aa32-f5c7-4c62-8e3d-48b54fd0d07b" type="audio" direction="output" />
+        <port name="Firefox 3/in-1" uuid="1b1ddb60-43de-4b6a-84f0-4fbfe3eaefc5" type="audio" direction="input" />
+        <port name="Firefox 3/in-2" uuid="33f82c57-d7c8-4d99-9c1f-7dd2a6a5b34c" type="audio" direction="input" />
+        <port name="Firefox 3/out-1" uuid="e62f4162-4e48-4b71-9288-9e9ef5c74c07" type="audio" direction="output" />
+        <port name="Firefox 3/out-2" uuid="fa30bea4-ac7d-452c-a0e5-db58e28eff70" type="audio" direction="output" />
+        <port name="PianoTeq/in-1" uuid="e0a31408-d301-4560-8148-add9502ab714" type="audio" direction="input" />
+        <port name="PianoTeq/in-2" uuid="34f3ece7-7ac7-440f-8dd3-7430531c6bcd" type="audio" direction="input" />
+        <port name="PianoTeq/out-1" uuid="4e7adae2-492a-42d9-b03e-c549c26e02e2" type="audio" direction="output" />
+        <port name="PianoTeq/out-2" uuid="b453db0b-cb26-4fab-bfdb-25ae88725f2e" type="audio" direction="output" />
+        <port name="VLC/in-1" uuid="86029125-84db-471f-a389-c60d0dee3a62" type="audio" direction="input" />
+        <port name="VLC/in-2" uuid="239faf51-66ca-4459-9c40-d02633fdbfeb" type="audio" direction="input" />
+        <port name="VLC/out-1" uuid="1c7ddb3d-ecbc-470c-97e6-5ee9ac9506e3" type="audio" direction="output" />
+        <port name="VLC/out-2" uuid="238cb1a3-80e8-48eb-a625-ca2c1e3e68fd" type="audio" direction="output" />
+      </ports>
+      <dict>
+        <key name="http://ladish.org/ns/canvas/x">1514.3946044937425</key>
+        <key name="http://ladish.org/ns/canvas/y">1060.0339624926442</key>
+      </dict>
+    </client>
+    <client name="jack2alsa" uuid="29534e98-e7e7-4706-ba47-4a96715f12f0" naming="app">
+      <ports>
+        <port name="playback_1" uuid="80e132cd-c3c8-4270-ad16-dc3fce84a65a" type="audio" direction="input" />
+        <port name="playback_2" uuid="cbfd61cf-a13c-41e5-82e9-3a20118420a7" type="audio" direction="input" />
+      </ports>
+    </client>
+    <client name="alsa2jack" uuid="15d65f67-734e-4da8-9b8c-bfc3730dfd3f" naming="app">
+      <ports>
+        <port name="capture_1" uuid="98e381cd-0676-40cf-8ae8-65f80bbf4bb1" type="audio" direction="output" />
+        <port name="capture_2" uuid="f65d3789-b73a-41b4-a0ae-f24076677272" type="audio" direction="output" />
+      </ports>
     </client>
   </clients>
   <connections>
+    <connection port1="6c95c1cc-ec77-40e2-94b6-672a380b12a2" port2="2b128134-6349-48c6-9bad-a2281e5e63ba" />
+    <connection port1="d583e957-c12e-4bfb-9e8c-265ffc762129" port2="d7e587b0-a51c-4ddc-b980-e8a4e74474d2" />
+    <connection port1="a629b041-4ce5-4049-87e2-7e90a86d92bc" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="1b5a9600-8a6a-4a9a-88ad-3be0741efbad" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
     <connection port1="3ad57d22-0974-4ac6-84d4-968667d5f5c1" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
     <connection port1="86da3885-acd7-4ab8-ba3f-75d6125066b2" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
     <connection port1="c9fcde4c-3023-4ca6-a887-025dbfcabd96" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
@@ -179,13 +295,27 @@ ladish Studio configuration.
     <connection port1="422a2ab3-6044-4df3-831e-9418ec6cebfc" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
     <connection port1="d4fba2c6-636d-4606-a2e9-6eea6b513161" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
     <connection port1="d738957f-03f3-4505-b3fa-64aff59b18b1" port2="ac351c61-ec9a-4e23-bc74-0864e62caae5" />
+    <connection port1="2156b9e4-4307-4693-88b2-f3e5ae0c88c6" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="1e4afd70-a8a1-4497-891a-d249fcfe14a8" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
     <connection port1="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" port2="282351d7-c0d8-4fa8-80c6-3c59384c6a0d" />
     <connection port1="0e6abe42-b766-4b20-a175-ea4eee0e103c" port2="08823d6c-dc4c-47ea-8121-9c68a8e9d81c" />
     <connection port1="40933b79-dea6-4057-b82e-a0d806cdd2bf" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
     <connection port1="1791e7cb-785e-4e3f-a0eb-ddd958eb443f" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="56b0a2e0-22f7-417a-bbe2-cd9b5b802c3d" port2="e0a31408-d301-4560-8148-add9502ab714" />
+    <connection port1="0e6abe42-b766-4b20-a175-ea4eee0e103c" port2="34f3ece7-7ac7-440f-8dd3-7430531c6bcd" />
+    <connection port1="4e7adae2-492a-42d9-b03e-c549c26e02e2" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="b453db0b-cb26-4fab-bfdb-25ae88725f2e" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="98e381cd-0676-40cf-8ae8-65f80bbf4bb1" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="f65d3789-b73a-41b4-a0ae-f24076677272" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
+    <connection port1="9a4509d9-8fc9-4d3a-a57b-5f1b64988780" port2="80e132cd-c3c8-4270-ad16-dc3fce84a65a" />
+    <connection port1="d9143d7e-39ec-469c-84d7-4c31c2ef6133" port2="cbfd61cf-a13c-41e5-82e9-3a20118420a7" />
+    <connection port1="6c95c1cc-ec77-40e2-94b6-672a380b12a2" port2="89d9dc31-5c1b-4525-93a5-a38df1f2324a" />
+    <connection port1="d583e957-c12e-4bfb-9e8c-265ffc762129" port2="da5eab91-9760-4a3a-bc8d-d2da63c87f40" />
+    <connection port1="bd8b1a8c-f656-4148-a016-e2fa2de50933" port2="ca987391-1a8c-4a90-965b-e9608a42d3ef" />
+    <connection port1="f94be23b-55c9-45dc-ad9a-98c83f66bc57" port2="27d0c814-bfc1-441d-82b1-d111cc3a25a2" />
   </connections>
   <applications>
-    <application name="Non-Mixer" uuid="59fc4865-805a-4c55-bdae-cbfa4163e186" terminal="false" level="0" autorun="true">non-mixer</application>
+    <application name="Non-Mixer" uuid="59fc4865-805a-4c55-bdae-cbfa4163e186" terminal="false" level="0" autorun="false">non-mixer</application>
     <application name="PianoTeq" uuid="5e5cbca3-c956-409b-b993-e451b9b7248d" terminal="false" level="0" autorun="true">pianoteq</application>
   </applications>
 </studio>

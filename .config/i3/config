@@ -183,10 +183,11 @@ bindsym Mod4+Shift+e exec spacefm
 #Gamma, color temp and brightness night adjuster
 exec --no-startup-id redshift-gtk
 
-# Start JACK server and session manager : 
-- Claudia will start JACK afaik.
-- As studio contains Non-Mixer and PianoTeq apps, they will start automatically
-exec_always --no-startup-id claudia
-
-# Next start ALSA MIDI -> JACK MIDI bridge
-exec --no-startup-id a2j -e
+# Start JACK server and session manager :
+#- Cadence starts JACK, A2J and load Home LADISH studio
+#- Claudia starts GUI 
+for_window [class="Claudia"] move container to workspace 3
+for_window [class="Cadence"] move container to workspace 3
+for_window [class="Non-Mixer"] move container to workspace 3
+for_window [title="Pianoteq*"] move container to workspace 3
+exec_always --no-startup-id "sh -c 'cadence-session-start --start; sleep 5; non-mixer /home/chosty/.config/nonmixer/Home/; sleep 5; claudia'"
