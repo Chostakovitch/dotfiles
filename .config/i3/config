@@ -195,3 +195,5 @@ for_window [class="Non-Mixer"] move container to workspace 3
 for_window [class="Ardour"] move container to workspace 3
 for_window [title="Pianoteq*"] move container to workspace 3
 exec --no-startup-id "sh -c 'cadence-session-start --start; sleep 3; Ardour5 /mnt/data/Documents/Ardour/Petrus;"
+
+exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns

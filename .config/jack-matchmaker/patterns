@@ -1,0 +1,7 @@
+# VLC Left
+vlc.*?1$
+.*:VLC/.*?1
+
+# VLC Right
+vlc.*?2$
+.*:VLC/in.*?2
