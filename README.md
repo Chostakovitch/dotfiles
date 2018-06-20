@@ -11,11 +11,12 @@ Setup for :
 * Terminator
 * ZSH with Oh My ZSH!
 * [Dunst](https://github.com/dunst-project/dunst), a great and lightweight notification daemon
-* Sound setup :
+* Sound setup (total beginner there btw) :
   * JACK, a sound server, without PA support ;
   * PianoTeq, a virtual synth ;
   * Cadence and Claudia, JACK and LADISH front-ends ;
   * Non-Mixer, a mixer.
+  * Ardour, a DAW.
 * Random things (GTK3+ theme, Redshift, taskwarrior...)
 
 ### Requirements 
