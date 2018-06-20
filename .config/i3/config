@@ -183,11 +183,15 @@ bindsym Mod4+Shift+e exec spacefm
 #Gamma, color temp and brightness night adjuster
 exec --no-startup-id redshift-gtk
 
+# Set ALSA initial volume
+exec-always --no-startup-id
+
 # Start JACK server and session manager :
 #- Cadence starts JACK, A2J and load Home LADISH studio
 #- Claudia starts GUI 
 for_window [class="Claudia"] move container to workspace 3
-for_window [class="Cadence"] move container to workspace 3
+for_window [class="Cadence"] floating enable; move container to workspace 3
 for_window [class="Non-Mixer"] move container to workspace 3
+for_window [class="Ardour"] move container to workspace 3
 for_window [title="Pianoteq*"] move container to workspace 3
-exec_always --no-startup-id "sh -c 'cadence-session-start --start; sleep 5; non-mixer /home/chosty/.config/nonmixer/Home/; sleep 5; claudia'"
+exec --no-startup-id "sh -c 'cadence-session-start --start; sleep 3; Ardour5 /mnt/data/Documents/Ardour/Petrus;"
