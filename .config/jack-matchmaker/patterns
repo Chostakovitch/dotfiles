@@ -1,7 +1,16 @@
 # VLC Left
 vlc.*?1$
-.*:VLC/.*?1
+.*:VLC/in-1
 
 # VLC Right
 vlc.*?2$
-.*:VLC/in.*?2
+.*:VLC/in-2
+
+# == Firefox, all tabs mixed in one : volume per tab is managed through players directly ==
+# FF Left
+.*?:AudioStream.*?0$
+.*:Firefox/in-1
+
+# FF Right
+.*?:AudioStream.*?1$
+.*:Firefox/in-2
