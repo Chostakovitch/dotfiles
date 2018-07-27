@@ -127,8 +127,8 @@ bindsym $mod+r mode "resize"
 #put workspace 1 on main screen
 workspace 1 output DVI-D-0
 workspace 2 output HDMI-0 
-workspace 3 output HDMI-0 
-workspace 4 output DVI-D-0
+workspace 3 output DVI-D-0
+workspace 4 output HDMI-0 
 
 #start compositor
 exec --no-startup-id compton
@@ -143,6 +143,7 @@ exec setxkbmap fr
 exec numlockx on
 
 #popup config Firefox / Terminator / General Purpose
+for_window [window_role="Steam"] floating enable
 for_window [window_role="About"] floating enable
 for_window [window_role="Organizer"] floating enable
 for_window [title="^Terminator *"] floating enable

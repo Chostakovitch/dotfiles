@@ -14,3 +14,10 @@ vlc.*?2$
 # FF Right
 .*?:AudioStream.*?1$
 .*:Firefox/in-2
+
+# PianoTeq
+Pianoteq.*?1$
+.*:PianoTeq/in-1
+
+Pianoteq.*?2$
+.*:PianoTeq/in-2
