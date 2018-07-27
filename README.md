@@ -11,6 +11,8 @@ Setup for :
 * Terminator
 * ZSH with Oh My ZSH!
 * [Dunst](https://github.com/dunst-project/dunst), a great and lightweight notification daemon
+* [Rofi](https://github.com/DaveDavenport/rofi), a full-customizable app launcher/windows 
+switcher
 * Sound setup (total beginner there btw) :
   * JACK, a sound server, without PA support ;
   * PianoTeq, a virtual synth ;
@@ -31,7 +33,8 @@ Configuration makes use of these things, just to record but not mandatory :
 * [SpaceFM](https://ignorantguru.github.io/spacefm/)
 * [PlayerCTL](https://github.com/acrisci/playerctl)
 * [GTK Arc Theme](https://github.com/horst3180/arc-theme)
-* Fonts : Noto Sans, DejaVu Sans, MaterialIcons, Symbola
+* Fonts : Noto Sans, Noto Emoji, DejaVu Sans, MaterialIcons, Symbola
+* xdotool, xsel
 
 ### What is this, Chosto ? 
 
