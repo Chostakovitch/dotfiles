@@ -169,9 +169,9 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 
-#Volume keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set 'Master' 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set 'Master' 5%-
+# ALSA key binding (media keys do not even have keycode...)
+bindsym KP_Add exec --no-startup-id amixer -D hw:PCH -M sset Master 5%+
+bindsym KP_Subtract exec --no-startup-id amixer -D hw:PCH -M sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer set 'Master' toggle
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioPrev exec --no-startup-ip playerctl prev
@@ -186,7 +186,7 @@ bindsym Mod4+Shift+e exec spacefm
 exec --no-startup-id redshift-gtk
 
 # Set ALSA initial volume
-exec-always --no-startup-id
+exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
 for_window [class="Claudia"] move container to workspace 4
 for_window [class="Cadence"] floating enable; move container to workspace 3
