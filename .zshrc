@@ -61,6 +61,7 @@ plugins=(
   docker
   rand-quote
   taskwarrior
+  systemd
 )
 
 source $ZSH/oh-my-zsh.sh

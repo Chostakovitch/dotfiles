@@ -7859,6 +7859,7 @@ if rofi.returncode == 1:
 else:
     for line in stdout.splitlines():
         emoji = line.split()[0]
+        print(emoji.decode('utf-8'))
         if rofi.returncode == 0:
             Popen(
                 args=[
