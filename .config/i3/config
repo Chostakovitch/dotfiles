@@ -159,7 +159,7 @@ bindsym $mod+l exec --no-startup-id $Locker && sleep 1
 #Lock and suspend to RAM
 bindsym $mod+Shift+l exec --no-startup-id $Locker && echo mem > /sys/power/state
 exec_always --no-startup-id xset dpms 600
-exec_always --no-startup-id xautolock -time 9 -locker $Locker
+exec_always --no-startup-id xautolock -time 9 -locker $Locker -corners ----
 
 #Notifications
 exec --no-startup-id dunst
