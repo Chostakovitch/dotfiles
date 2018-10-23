@@ -1,0 +1,2 @@
+event=button/mute
+action=amixer -D hw:PCH -M sset 'Master' toggle
