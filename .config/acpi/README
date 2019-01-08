@@ -1,0 +1,9 @@
+Example file to bind an ACPI event to a simple action.
+
+In my case up and down volume buttons are recognized and have a 
+keycode/sym but mute don't have. However the ACPI event when using 
+the key is correctly catched (button/mute).
+
+We use acpid daemon to bind the appropriate action
+
+Copy this file to `/etc/acpi/events`.
