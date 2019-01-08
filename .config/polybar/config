@@ -51,7 +51,7 @@ module-margin-right = 4
 
 modules-left = powermenu system-uptime-pretty
 modules-center = xwindow
-modules-right = gmail system-usb-udev volume date 
+modules-right = system-usb-udev volume date 
 
 tray-position = right
 
