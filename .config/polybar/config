@@ -122,10 +122,10 @@ format = <label-state> <label-mode>
 
 index-sort = true
 
-ws-icon-0 = 2;
-ws-icon-1 = 1;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
+ws-icon-0 = 2;
+ws-icon-1 = 1;
+ws-icon-2 = 3;
+ws-icon-3 = 4;rm
 ws-icon-4 = irssi;
 ws-icon-default = 
 
@@ -191,7 +191,7 @@ interval = 0.5
 
 format = <label> <ramp-coreload>
 
-label = %{F#fba922}
+label = %{F#fba922} 
 
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 3
@@ -259,8 +259,8 @@ interval = 0.5
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
 
-label = %{F#77dd77} %{F-} %temperature-c%
-label-warn = %{F#dd7777} %{F-} %temperature-c%
+label = %{F#77dd77} %{F-} %temperature-c%
+label-warn = %{F#dd7777}  %{F-} %temperature-c%
 label-warn-foreground = #dd7777
 
 ramp-0 = 
