@@ -10,9 +10,12 @@
 		"CSS3",
 		"Emoji",
 		"HTMLBeautify",
+		"MarkdownEditing",
+		"MarkdownTOC",
 		"Monokai - Spacegray",
 		"Package Control",
 		"Seti_UI",
-		"Skins"
+		"Skins",
+		"TypeScript"
 	]
 }
