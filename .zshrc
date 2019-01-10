@@ -105,3 +105,8 @@ alias cp="cpv"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 eval "$(fasd --init auto)"
+
+# Start ssh-agent and retain passphrase for 1 hour
+# ssh-add is not used for convenience
+# Instead "AddKeysToAgent yes" option in ~/.ssh/config for "Host *"
+eval "$(ssh-agent -s -t 3600)"

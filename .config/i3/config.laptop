@@ -210,4 +210,5 @@ exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
 # Set DPI along with .Xresources
 exec xrandr --dpi 160
 
+# Mail client
 exec thunderbird
