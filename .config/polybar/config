@@ -51,7 +51,7 @@ module-margin-right = 4
 
 modules-left = powermenu system-uptime-pretty
 modules-center = xwindow
-modules-right = gmail system-usb-udev volume date 
+modules-right = system-usb-udev volume date 
 
 tray-position = right
 
@@ -130,7 +130,7 @@ ws-icon-4 = irssi;
 ws-icon-default = 
 
 label-dimmed-underline = ${root.background}
-
+label-separator = |
 label-focused = %icon%  %name%
 label-focused-foreground = #f3f3f3
 ;label-focused-underline = #${colors.accent}
