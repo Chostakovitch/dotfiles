@@ -157,7 +157,7 @@ set $Locker ~/.config/i3/lock/lock.sh
 bindsym $mod+l exec --no-startup-id $Locker && sleep 1
 
 #Lock and suspend to RAM
-bindsym $mod+Shift+l exec --no-startup-id $Locker && echo mem > /sys/power/state
+bindsym $mod+Shift+l exec --no-startup-id $Locker && systemctl suspend
 exec_always --no-startup-id xset dpms 600
 exec_always --no-startup-id xautolock -time 9 -locker $Locker
 
