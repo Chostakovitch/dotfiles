@@ -1,0 +1,13 @@
+#!/bin/sh
+
+updates_arch=$(/usr/bin/checkupdates | wc -l)
+
+updates_aur=$(/usr/bin/checkupdates-aur | wc -l)
+
+updates=$(("$updates_arch" + "$updates_aur"))
+
+if [ "$updates" -gt 0 ]; then
+    echo "%{F#dd7777}%{F#ddd} $updates"
+else
+    echo "%{F#77dd77}%{F#ddd} 0"
+fi

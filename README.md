@@ -58,9 +58,11 @@ I added to the classic Arch/i3WM :
 Please note : on my system XDG_CONFIG_HOME is $HOME/.config. 
 
 * Clone in bare repository : `git clone --bare https://github.com/Chostakovitch/dotfiles.git $HOME/.cfg`. A bare repository does not have a working tree (basically it is just `.git` content). So we avoid conflicts with another git repository.
-* Create a working tree outside `.cfg` : `/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout`.
+* Create a working tree outside `.cfg` : `git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout`.
 * Adjust `DEFAUT_USER` in `~/.zshrc`.
 * Source `~/.zshrc` and use provided `config` alias to pull.
 * `config config --local status.showUntrackedFiles no` to ignore untracked files in status (better as it is home dir).
+
+Also, as desktop machine and laptop don't have configuration conflicts (e.g. laptop uses PulseAudio and desktop uses ALSA/Jack), some files have `.desk` extension and others `.laptop`. Launch `~/.init_config.sh` to create symlinks (e.g. `~/.config/i3/config` will be symlinked to `~/.config/i3/config.laptop` if I launch `~/.init_config.sh laptop`).
 
 Credits to [this great article](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) for the trick.
