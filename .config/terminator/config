@@ -2,11 +2,13 @@
   borderless = True
   custom_url_handler = firefox
   enabled_plugins = TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
   title_font = DejaVu Sans Mono 11
   title_use_system_font = False
   use_custom_url_handler = True
 [keybindings]
   layout_launcher = <Shift><Alt>l
+  reset_clear = <Primary><Shift>l
   switch_to_tab_1 = None
   switch_to_tab_2 = None
 [layouts]
