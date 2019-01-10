@@ -188,11 +188,7 @@ exec --no-startup-id redshift-gtk
 # Set ALSA initial volume
 exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
-for_window [class="Claudia"] move container to workspace 4
-for_window [class="Cadence"] floating enable; move container to workspace 3
-for_window [class="Non-Mixer"] move container to workspace 4
-for_window [class="Ardour"] move container to workspace 3
-for_window [title="Pianoteq*"] move container to workspace 3
+for_window [class="^Thunderbird*"] move container to workspace 3
 
 # Cadence will take care of all we need : 
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
@@ -201,3 +197,5 @@ exec --no-startup-id cadence-session-start --start
 
 # Automate port mapping for applications
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
+
+exec thunderbird
