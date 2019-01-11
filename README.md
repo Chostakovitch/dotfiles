@@ -35,6 +35,7 @@ Configuration makes use of these things, just to record but not mandatory :
 * [GTK Arc Theme](https://github.com/horst3180/arc-theme)
 * Fonts : Noto Sans, Noto Emoji, DejaVu Sans, MaterialIcons, Symbola
 * xdotool, xsel
+* gnupg
 
 ### What is this, Chosto ? 
 
