@@ -171,10 +171,11 @@ smart_gaps on
 
 # Set mouse acceleration
 exec_always --no-startup-id xinput set-prop 'FocalTechPS/2 FocalTech Touchpad' 'libinput Accel Speed' 0.8
+exec_always --no-startup-id xinput set-prop 'Microsoft Microsoft 3-Button Mouse with IntelliEye(TM)' 'libinput Accel Speed' 0.8
 
 # ALSA key binding (media keys do not even have keycode...)
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D hw:PCH -M sset Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D hw:PCH -M sset Master 5%-
+bindsym XF86AudioLowerVolume exec --no-startup-id aimxer -D hw:PCH -M sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D hw:PCH -M sset 'Master' toggle
 bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
 bindsym XF86AudioPrev exec --no-startup-ip playerctl prev
