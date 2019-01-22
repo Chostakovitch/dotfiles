@@ -4,11 +4,13 @@ names=("chostybottombar" "chostytopbar")
 killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 if type "xrandr"; then
-  monitors=$(xrandr --query | grep " connected" | cut -d" " -f1)
-  monarray=($monitors)
+ 	monitors=$(xrandr --query | grep " connected" | cut -d" " -f1)
+ 	monarray=($monitors)
 	for name in ${names[@]}; do
-	  MONITOR=${monarray[0]} polybar -q --reload ${name} &
-  done
+		for mon in ${monarray[@]}; do
+			MONITOR=${mon} polybar -q --reload ${name} &
+		done
+	done
 else
-  polybar --reload ${name} &
+	polybar --reload ${name} &
 fi
