@@ -21,3 +21,8 @@ for f in `find ~/.config -type f -name "*.${1}"`; do
 	echo "Symlinking to ${f}..."
 	ln -sf ${f} ${f%.*}
 done
+
+for f in `find ~ -maxdepth 1 -mindepth 1 -type f -name "*.${1}"`; do
+	echo "Symlinking to ${f}..."
+	ln -sf ${f} ${f%.*}
+done
