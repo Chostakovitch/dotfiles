@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Seems like the network is not up yet when this script is launched
+# for the first time, causing an error. So wait a bit
+sleep 5
 updates_arch=$(/usr/bin/checkupdates | wc -l)
 
 if ! updates_aur=$(trizen -Su --aur --quiet | wc -l); then
