@@ -102,6 +102,7 @@ alias cp="cpv"
 # To use when .cfg contains a bare git repo.
 # See this https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias ovh='sshfs chosto@51.75.250.228:/home/chosto /mnt/ovh'
 
 # Start ssh-agent and retain passphrase for 1 hour
 # ssh-add is not used for convenience
