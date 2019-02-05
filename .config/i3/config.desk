@@ -202,3 +202,8 @@ exec --no-startup-id cadence-session-start --start
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
 
 exec thunderbird
+
+# Screenshot
+# Selection, highlight, jpeg 9/10 quality, 5px selection border, hide cursor
+# Save to file
+bindsym Print exec ~/.config/i3/scripts/screenshot.sh

@@ -36,6 +36,7 @@ Configuration makes use of these things, just to record but not mandatory :
 * Fonts : Noto Sans, Noto Emoji, DejaVu Sans, MaterialIcons, Symbola
 * xdotool, xsel
 * gnupg
+* maim, for screenshot
 
 ### What is this, Chosto ? 
 
@@ -61,6 +62,7 @@ Please note : on my system XDG_CONFIG_HOME is $HOME/.config.
 * Clone in bare repository : `git clone --bare https://github.com/Chostakovitch/dotfiles.git $HOME/.cfg`. A bare repository does not have a working tree (basically it is just `.git` content). So we avoid conflicts with another git repository.
 * Create a working tree outside `.cfg` : `git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout`.
 * Adjust `DEFAUT_USER` in `~/.zshrc`.
+* Adjust other environment variables, such as `SCREENSHOT_PATH`.
 * Source `~/.zshrc` and use provided `config` alias to pull.
 * `config config --local status.showUntrackedFiles no` to ignore untracked files in status (better as it is home dir).
 

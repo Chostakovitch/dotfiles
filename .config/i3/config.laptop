@@ -213,3 +213,8 @@ exec xrandr --dpi 160
 
 # Mail client
 exec thunderbird
+
+# Screenshot
+# Selection, highlight, jpeg 9/10 quality, 5px selection border, hide cursor
+# Save to file
+bindsym Print exec ~/.config/i3/scripts/screenshot.sh

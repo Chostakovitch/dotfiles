@@ -102,9 +102,17 @@ alias cp="cpv"
 # To use when .cfg contains a bare git repo.
 # See this https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Mount VPS as FUSE
 alias ovh='sshfs chosto@51.75.250.228:/home/chosto /mnt/ovh'
+
+# SSH port forwarding for Picasoft LDAP
+alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net -i /home/.ssh/id_rsa'
 
 # Start ssh-agent and retain passphrase for 1 hour
 # ssh-add is not used for convenience
 # Instead "AddKeysToAgent yes" option in ~/.ssh/config for "Host *"
 eval "$(ssh-agent -s -t 3600)"
+
+# Default path for screenshots
+export SCREENSHOT_PATH=~/img/screenshot
