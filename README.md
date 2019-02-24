@@ -101,6 +101,8 @@ Some configuration files reside in `/etc` directory, but I want to keep track of
 
 Just create a folder in `XDG_CONFIG_HOME` and a file named `dest`. In this file, write the destination path. Then, copy the configuration files that you want to track and add them to the repository. You can also use `.desk` and `.laptop` extensions for specific configuration.
 
-The `~/.init_config.sh` script will copy relevant files (laptop or desktop) in the directory specified by `dest` file.
+The `~/.init_config.sh` script will copy relevant files (laptop or desktop) in the directory specified by `dest` file. Now you just modify the files tracked by Git and run `~/.init_config.sh`.
+
+Example : see `~/.config/lightdm` directory.
 
 Note this is a quick and quite dirty solution.
