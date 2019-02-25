@@ -113,6 +113,3 @@ alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net 
 # ssh-add is not used for convenience
 # Instead "AddKeysToAgent yes" option in ~/.ssh/config for "Host *"
 eval "$(ssh-agent -s -t 3600)"
-
-# Default path for screenshots
-export SCREENSHOT_PATH=~/img/screenshot

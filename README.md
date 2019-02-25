@@ -51,6 +51,7 @@ switcher
   * Non-Mixer, a mixer.
   * Ardour, a DAW.
 * Random things (GTK3+ theme, Redshift, taskwarrior...)
+* Screenshots (area or windows), with saving or uploading to a Lychee server ([custom script here](.config/i3/scripts/screenshot.py))
 
 Here is a screenshot of the rendition i3/polybar with this setup (and yeah, I use nano, sorry to disappoint)
 ![Screenshot of i3/polybar](https://pic.chosty.fr/uploads/big/22c75dc7901223204e0e9c798506b435.png)
@@ -71,6 +72,7 @@ Configuration makes use of these things, just to record but not exhaustive :
 * xdotool, xsel
 * gnupg
 * maim, for screenshot
+* Python 3.7
 
 \#todo automatic installation of dependencies
 
