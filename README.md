@@ -107,4 +107,16 @@ The `~/.init_config.sh` script will copy relevant files (laptop or desktop) in t
 
 Example : see `~/.config/lightdm` directory.
 
+### Git Hook
+
+You may want to add a file named `post-merge` in `~/.cfg/hooks` with contains something like :
+
+```bash
+#!/bin/sh
+
+exec ~/.init_config.sh <whatever you environment is>
+```
+
+When you pull, changes are applied automagically.
+
 Note this is a quick and quite dirty solution.
