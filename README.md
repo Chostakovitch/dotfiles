@@ -117,6 +117,7 @@ You may want to add a file named `post-merge` in `~/.cfg/hooks` with contains so
 exec ~/.init_config.sh <whatever you environment is>
 ```
 
+And then `chmod +x ~/.cfg/hooks/post-merge`.
 When you pull, changes are applied automagically.
 
 Note this is a quick and quite dirty solution.
