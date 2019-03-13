@@ -9,6 +9,7 @@
     - [Bare repository trick](#bare-repository-trick)
     - [Divergence betwteen laptop and desktop](#divergence-betwteen-laptop-and-desktop)
     - [Configuration outside XDG_CONFIG_HOME, e.g. /etc](#configuration-outside-xdg_config_home-eg-etc)
+    - [Git Hook](#git-hook)
 
 <!-- /MarkdownTOC -->
 
@@ -109,7 +110,7 @@ Example : see `~/.config/lightdm` directory.
 
 ### Git Hook
 
-You may want to add a file named `post-merge` in `~/.cfg/hooks` with contains something like :
+You may want to add a file named `post-merge` **and** `pre-push` in `~/.cfg/hooks` with contains something like :
 
 ```bash
 #!/bin/sh
@@ -117,7 +118,7 @@ You may want to add a file named `post-merge` in `~/.cfg/hooks` with contains so
 exec ~/.init_config.sh <whatever you environment is>
 ```
 
-And then `chmod +x ~/.cfg/hooks/post-merge`.
+And then `chmod +x ~/.cfg/hooks/{post-merge,pre-push}`.
 When you pull, changes are applied automagically.
 
 Note this is a quick and quite dirty solution.
