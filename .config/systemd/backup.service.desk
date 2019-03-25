@@ -1,0 +1,10 @@
+[Unit]
+Description=Back up chosty's documents
+OnFailure=notify-backup-failure
+
+[Service]
+Type=oneshot
+# Cannot use -a as FAT32 does not support permission. Also don't use -g and -l (FAT32 does not support groups and symlinks)
+# Do not use full path and relax timestamp, otherwise all files are copied over
+ExecStart=/usr/bin/rsync /home/chosty -CRErtm --delete --modify-window=10 --exclude=.cache --exclude=.cfg --exclude=.eclipse --exclude=.electron-gyp --exclude=.npm --exclude=.nv --exclude=.pEp --exclude=.scenari --exclude=.swt --exclude=.local --exclude=.minecraft --exclude=.mozilla --exclude=.thumbnails --exclude=.oh-my-zsh --exclude=.var --exclude=.log /mnt/backup/Linux
+#ExecStart=/usr/bin/rsync /mnt/data/Documents /mnt/data/Images /mnt/data/Vidéos -CErtm --delete --modify-window=10 /mnt/backup/Data/
