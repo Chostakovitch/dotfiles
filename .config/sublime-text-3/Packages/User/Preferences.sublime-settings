@@ -1,9 +1,10 @@
 {
 	"color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
-	"font_size": 18,
+	"font_size": 11,
 	"ignored_packages":
 	[
 		"Markdown",
+		"TypeScript",
 		"Vintage"
 	],
 	"theme": "Seti.sublime-theme"

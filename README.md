@@ -76,6 +76,7 @@ Configuration makes use of these things, just to record but not exhaustive :
 * gnupg
 * maim, for screenshot
 * Python 3.7
+* opensmtpd
 
 \#todo automatic installation of dependencies
 
