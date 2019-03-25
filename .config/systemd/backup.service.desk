@@ -1,6 +1,6 @@
 [Unit]
 Description=Back up chosty's documents
-OnFailure=notify-backup-failure
+OnFailure=notify-backup-failure.service
 
 [Service]
 Type=oneshot
