@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup OVH
+OnFailure=notify-backup-failure
+[Service]
+Type=oneshot
+ExecStart=/home/.config/backup/rsync/rsync_snapshot.sh 51.75.250.228

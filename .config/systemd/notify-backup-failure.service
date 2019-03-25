@@ -1,0 +1,6 @@
+[Unit]
+Description=Send mail on backup failure
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash -c '{ echo -e "Subject: Backup failed\n\nMachine info :\n" ; hostnamectl ; echo -e "\n\nLogs:\n\n" ; journalctl -n 20 -u backup.service; }  | sendmail -F "Quentin Duchemin" -f "desktop@chosty.fr" quentin.duchemin@hds.utc.fr'
