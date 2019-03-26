@@ -2,7 +2,7 @@
 Description=Run backup daily
 
 [Timer]
-OnCalendar=daily
+OnCalendar=weekly
 Persistent=true
 
 [Install]
