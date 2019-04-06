@@ -1,0 +1,9 @@
+SCREENSHOT_CONFIG = {
+    'base_url': '',
+    'album_name': 'Screenshots',
+    'user': '',
+    'password': '',
+    'default_path': '~/img/screenshots',
+    'save_format': 'png',
+    'upload_format': 'jpg'
+}

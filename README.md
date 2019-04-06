@@ -6,10 +6,11 @@
 - [Contents](#contents)
 - [Requirements](#requirements)
 - [Usage](#usage)
-    - [Bare repository trick](#bare-repository-trick)
-    - [Divergence betwteen laptop and desktop](#divergence-betwteen-laptop-and-desktop)
-    - [Configuration outside XDG_CONFIG_HOME, e.g. /etc](#configuration-outside-xdg_config_home-eg-etc)
-    - [Git Hook](#git-hook)
+  - [Bare repository trick](#bare-repository-trick)
+  - [Divergence betwteen laptop and desktop](#divergence-betwteen-laptop-and-desktop)
+  - [Configuration outside XDG_CONFIG_HOME, e.g. /etc](#configuration-outside-xdgconfighome-eg-etc)
+  - [Git Hook](#git-hook)
+  - [Screenshots](#screenshots)
 
 <!-- /MarkdownTOC -->
 
@@ -52,6 +53,7 @@ switcher
   * Non-Mixer, a mixer.
   * Ardour, a DAW.
 * Random things (GTK3+ theme, Redshift, taskwarrior...)
+* A custom script to take screenshots and save them or upload them
 * Screenshots (area or windows), with saving or uploading to a Lychee server ([custom script here](.config/i3/scripts/screenshot.py))
 
 Here is a screenshot of the rendition i3/polybar with this setup (and yeah, I use nano, sorry to disappoint)
@@ -122,3 +124,14 @@ And then `chmod +x ~/.cfg/hooks/{post-merge,pre-push}`.
 When you pull, changes are applied automagically.
 
 Note this is a quick and quite dirty solution.
+
+### Screenshots
+
+Todo : move it on another repo
+
+A small script inside `~/.config/i3/scripts/` uses `maim` to take screenshots.
+Then, a flag can either save locally the image or upload it (now, only on a Lychee server using the API).
+
+The `~/.config/i3/scripts/config.py` contains the default configuration.
+
+In either case, the link or path is copied to clipboard and a notification is triggered.

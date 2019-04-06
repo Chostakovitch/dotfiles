@@ -215,6 +215,7 @@ exec xrandr --dpi 160
 exec thunderbird
 
 # Screenshot
-# Selection, highlight, jpeg 9/10 quality, 5px selection border, hide cursor
 # Save to file
-bindsym Print exec ~/.config/i3/scripts/screenshot.sh
+bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
+# Upload to Lychee
+bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
