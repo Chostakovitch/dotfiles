@@ -105,6 +105,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Mount VPS as FUSE
 alias ovh='sshfs chosto@51.75.250.228:/home/chosto /mnt/ovh'
+alias pica01='sshfs qduchemi@pica01.picasoft.net:/DATA/docker /mnt/pica01'
+alias pica02='sshfs qduchemi@pica02.picasoft.net:/DATA/docker /mnt/pica02'
+alias pica_test='sshfs qduchemi@pica01-test.picasoft.net:/DATA/docker /mnt/pica01-test'
 
 # SSH port forwarding for Picasoft LDAP
 alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net -i /home/.ssh/id_rsa'
@@ -113,3 +116,5 @@ alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net 
 # ssh-add is not used for convenience
 # Instead "AddKeysToAgent yes" option in ~/.ssh/config for "Host *"
 eval "$(ssh-agent -s -t 3600)"
+
+alias lt='ls -lath'

@@ -74,7 +74,7 @@ Configuration makes use of these things, just to record but not exhaustive :
 * Fonts : Noto Sans, Noto Emoji, DejaVu Sans, MaterialIcons, Symbola
 * xdotool, xsel
 * gnupg
-* maim, for screenshot
+* maim, for screenshot + `pip install pyperclip`
 * Python 3.7
 * opensmtpd
 
