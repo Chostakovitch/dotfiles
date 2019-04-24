@@ -204,8 +204,9 @@ exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
 # Set mouse acceleration
 exec_always --no-startup-id xinput set-prop 'pointer:Razer Razer DeathAdder Chroma' --type=float 'libinput Accel Speed' -.4
 
-# Mail client
+# Communication
 exec thunderbird
+exec signal-desktop
 
 # Screenshot
 # Save to file
