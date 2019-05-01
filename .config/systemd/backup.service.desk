@@ -6,5 +6,6 @@ OnFailure=notify-backup-failure.service
 Type=oneshot
 # Cannot use -a as FAT32 does not support permission. Also don't use -g and -l (FAT32 does not support groups and symlinks)
 # Do not use full path and relax timestamp, otherwise all files are copied over
-ExecStart=/usr/bin/rsync -CRErtm --delete --modify-window=10 --exclude /.cache --exclude /.cfg --exclude /.eclipse --exclude /.electron-gyp --exclude /.npm --exclude /.nv --exclude /.pEp --exclude /.scenari --exclude /.swt --exclude /.local --exclude /.minecraft --exclude /.mozilla --exclude /.thumbnails --exclude /.oh-my-zsh --exclude /.var --exclude /.log --exclude /aur /home/chosty /mnt/backup/Linux
-ExecStart=/usr/bin/rsync -CErtm --delete --modify-window=10 --exclude /Jeux /mnt/data/Documents /mnt/data/Images /mnt/data/Vidéos /mnt/backup/Data/
+# For some reason, exclude should be relative path (cf man), but this does not work for the first command. Dunno why
+ExecStart=/usr/bin/rsync -vCRErtm --delete --delete-excluded --modify-window=10 --include="/home/chosty/.config" --exclude="/home/chosty/.*" --exclude="/home/chosty/aur" --exclude="/home/chosty/git" /home/chosty /mnt/backup/Linux
+ExecStart=/usr/bin/rsync -vCErtm --delete --delete-excluded --modify-window=10 --exclude="/Documents/Jeux" /mnt/data/Documents /mnt/data/Images /mnt/data/Vidéos /mnt/backup/Data/
