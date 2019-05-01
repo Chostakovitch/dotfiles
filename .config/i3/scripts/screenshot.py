@@ -60,7 +60,7 @@ def save_img(path, img, img_format):
     pathlib.Path(path).mkdir(parents=True, exist_ok=True)
 
     # Get date formatted with second granularity
-    date = time.strftime("%Y-%m-%d_%H:%M:%S")
+    date = time.strftime("%Y-%m-%d_%H-%M-%S")
 
     # Write image to appropriate file.
     # We get binary from maim, so open in binary mode
