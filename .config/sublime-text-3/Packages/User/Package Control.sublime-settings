@@ -5,15 +5,18 @@
 	],
 	"installed_packages":
 	[
+		"AutoDocstring",
 		"Color Scheme - Chromodynamics",
 		"ColorHelper",
 		"CSS3",
+		"Dockerfile Syntax Highlighting",
 		"Emoji",
 		"HTMLBeautify",
 		"MarkdownEditing",
 		"MarkdownTOC",
 		"Monokai - Spacegray",
 		"Package Control",
+		"Pretty JSON",
 		"Seti_UI",
 		"Skins",
 		"TypeScript"

@@ -199,6 +199,7 @@ exec --no-startup-id redshift-gtk
 exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
 for_window [class="^Thunderbird*"] move container to workspace 3
+for_window [class="^Signa*"] move container to workspace 3
 
 # Cadence will take care of all we need : 
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
@@ -211,8 +212,9 @@ exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
 # Set DPI along with .Xresources
 exec xrandr --dpi 160
 
-# Mail client
+# Communication
 exec thunderbird
+exec signal-desktop
 
 # Screenshot
 # Save to file

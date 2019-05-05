@@ -192,6 +192,7 @@ exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
 for_window [class="^Thunderbird*"] move container to workspace 3
 for_window [class="^Non-Mixer"] move container to workspace 4
+for_window [class="^Signal"] move container to workspace 3
 
 # Cadence will take care of all we need : 
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
