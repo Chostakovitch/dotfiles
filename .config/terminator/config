@@ -7,8 +7,18 @@
   title_use_system_font = False
   use_custom_url_handler = True
 [keybindings]
+  go_down = <Primary><Shift>Down
+  go_left = <Primary><Shift>Left
+  go_next = <Primary><Shift>n
+  go_prev = <Primary><Shift>p
+  go_right = <Primary><Shift>Right
+  go_up = <Primary><Shift>Up
   layout_launcher = <Shift><Alt>l
   reset_clear = <Primary><Shift>l
+  resize_down = <Primary><Alt>Down
+  resize_left = <Primary><Alt>Left
+  resize_right = <Primary><Alt>Right
+  resize_up = <Primary><Alt>Up
   switch_to_tab_1 = None
   switch_to_tab_2 = None
 [layouts]

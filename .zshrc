@@ -110,7 +110,7 @@ alias pica02='sshfs qduchemi@pica02.picasoft.net:/DATA/docker /mnt/pica02'
 alias pica_test='sshfs qduchemi@pica01-test.picasoft.net:/DATA/docker /mnt/pica01-test'
 
 # SSH port forwarding for Picasoft LDAP
-alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net -i /home/.ssh/id_rsa'
+alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net -i ~/.ssh/id_rsa'
 
 # Start ssh-agent and retain passphrase for 1 hour
 # ssh-add is not used for convenience
