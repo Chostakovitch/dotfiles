@@ -118,3 +118,5 @@ alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net 
 eval "$(ssh-agent -s -t 3600)"
 
 alias lt='ls -lath'
+alias bela_fs='sshfs root@192.168.7.2:/root/Bela/projects/ /home/cave/bela'
+export PATH=${PATH}:~/picasoft/pass

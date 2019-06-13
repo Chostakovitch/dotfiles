@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Wait until we can ping default gateway
+until ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null
+do
+    sleep 1
+done
+
 updates_arch=$(/usr/bin/checkupdates | wc -l)
 
 updates_aur=$(/usr/bin/checkupdates-aur | wc -l)

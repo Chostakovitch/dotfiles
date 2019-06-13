@@ -197,14 +197,10 @@ exec --no-startup-id redshift-gtk
 
 # Set ALSA initial volume
 exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
+exec --no-startup-id pavucontrol
 
 for_window [class="^Thunderbird*"] move container to workspace 3
 for_window [class="^Signa*"] move container to workspace 3
-
-# Cadence will take care of all we need : 
-# - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
-# - LADISH implies JACK starts, then it will starts needed apps (e.g. Non-Mixer)
-exec --no-startup-id cadence-session-start --start
 
 # Automate port mapping for applications
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
@@ -221,3 +217,4 @@ exec signal-desktop
 bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
 # Upload to Lychee
 bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
+for_window [class="^Pavucontrol"] move container to workspace 4
