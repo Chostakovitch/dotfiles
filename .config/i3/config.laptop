@@ -200,7 +200,8 @@ exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 exec --no-startup-id pavucontrol
 
 for_window [class="^Thunderbird*"] move container to workspace 3
-for_window [class="^Signa*"] move container to workspace 3
+for_window [class="^Signa*"] move scratchpad
+bindsym $mod+Shift+s [class="^Signa*"] scratchpad show
 
 # Automate port mapping for applications
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
