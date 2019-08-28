@@ -192,6 +192,7 @@ exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
 for_window [class="^Thunderbird*"] move container to workspace 3
 for_window [class="^Non-Mixer"] move container to workspace 4
+for_window [class="^Catia*"] move container to workspace 4
 for_window [class="^Signal"] move scratchpad
 bindsym $mod+Shift+s [class="^Signal"] scratchpad show
 
@@ -199,6 +200,7 @@ bindsym $mod+Shift+s [class="^Signal"] scratchpad show
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
 # - LADISH implies JACK starts, then it will starts needed apps (e.g. Non-Mixer)
 exec --no-startup-id cadence-session-start --start
+exec --no-startup-id catia
 
 # Automate port mapping for applications
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
