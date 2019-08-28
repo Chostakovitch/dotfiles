@@ -125,12 +125,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#put workspace 1 on main screen
-workspace 1 output DVI-D-0
-workspace 2 output HDMI-0 
-workspace 3 output DVI-D-0
-workspace 4 output HDMI-0 
-
 #start compositor
 exec --no-startup-id compton
 
@@ -198,10 +192,18 @@ exec --no-startup-id redshift-gtk
 # Set ALSA initial volume
 exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 exec --no-startup-id pavucontrol
+exec standardnotes-desktop
+exec atom
 
-for_window [class="^Thunderbird*"] move container to workspace 3
+for_window [class="^Thunderbird*"] move scratchpad
+bindsym $mod+Shift+t [class="^Thunderbird*"] scratchpad show
 for_window [class="^Signa*"] move scratchpad
 bindsym $mod+Shift+s [class="^Signa*"] scratchpad show
+for_window [class="^Pavucontrol"] move scratchpad
+bindsym $mod+Shift+p [class="^Pavucontrol"] move scratchpad
+for_window [class="Atom"] move to workspace 2
+for_window [class="Tor Browser"] move to workspace 5
+for_window [class="Standard Notes"] move to workspace 4
 
 # Automate port mapping for applications
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
@@ -218,4 +220,3 @@ exec signal-desktop
 bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
 # Upload to Lychee
 bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
-for_window [class="^Pavucontrol"] move container to workspace 4
