@@ -51,7 +51,6 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(
   git
   colored-man-pages
-  colorize
   command-not-found
   copydir
   cp
@@ -96,7 +95,6 @@ DEFAULT_USER=`whoami`
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cat="ccat"
 alias cp="cpv"
 
 # To use when .cfg contains a bare git repo.

@@ -194,7 +194,9 @@ exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 exec --no-startup-id pavucontrol
 exec standardnotes-desktop
 exec atom
+exec firefox
 
+for_window [class="^Firefox*"] move to workspace 3
 for_window [class="^Thunderbird*"] move scratchpad
 bindsym $mod+Shift+t [class="^Thunderbird*"] scratchpad show
 for_window [class="^Signa*"] move scratchpad
