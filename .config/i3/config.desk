@@ -190,11 +190,23 @@ exec --no-startup-id redshift-gtk
 # Set ALSA initial volume
 exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
-for_window [class="^Thunderbird*"] move container to workspace 3
-for_window [class="^Non-Mixer"] move container to workspace 4
-for_window [class="^Catia*"] move container to workspace 4
-for_window [class="^Signal"] move scratchpad
-bindsym $mod+Shift+s [class="^Signal"] scratchpad show
+for_window [class="^Non-Mixer"] mark "jack", move scratchpad
+for_window [class="^Catia*"] mark "jack", move scratchpad
+for_window [class="^Signal"] mark "msg", move scratchpad
+for_window [class="^Thunderbird*"] mark "mail", move scratchpad
+bindsym $mod+Shift+t [con_mark="mail"] scratchpad show
+bindsym $mod+Shift+j [con_mark="jack"] scratchpad show
+bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
+
+for_window [class="Firefox"] move to workspace 3
+for_window [class="Atom"] move to workspace 2
+for_window [class="Tor Browser"] move to workspace 5
+for_window [class="Standard Notes"] move to workspace 4
+
+exec standardnotes-desktop
+exec atom
+exec firefox
+
 
 # Cadence will take care of all we need : 
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
