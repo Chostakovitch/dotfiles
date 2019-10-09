@@ -82,7 +82,7 @@ def login():
     s.headers.update({'X-XSRF-TOKEN': r.cookies['XSRF-TOKEN'].replace('%3D', '')})
 
     r = s.post(SCREENSHOT_CONFIG['base_url'] + '/api/Session::login', data=auth)
-    
+
     if r.status_code != 200:
         raise RuntimeError("Cannot login to Lychee!")
 
@@ -107,12 +107,12 @@ def upload_image(session, album_id, binary_img, img_format):
         img_mime += 'png'
     else:
         raise ValueError("Invalid image format {0}!".format(img_format))
-    data = {'albumID': '15510292135273'}
+    data = {'albumID': album_id}
     files = {'0': (str(uuid.uuid4()) + "." + img_format, binary_img, img_mime)}
     r = requests.Request('POST', SCREENSHOT_CONFIG['base_url'] + '/api/Photo::add', data=data, files=files)
     dump = session.prepare_request(r)
     r = session.post(SCREENSHOT_CONFIG['base_url'] + '/api/Photo::add', data=data, files=files)
-    
+    print(r.text)
     if "Error" in r.text:
         raise RuntimeError("Unknown error while uploading picture")
 
@@ -131,7 +131,7 @@ def get_image_direct_link(session, album_id, image_id):
 
 def main(argv):
     upload, save, path = read_args(argv)
-    
+
     # If we upload the file, set format to jpg, even if we save the screenshot after
     img_format = SCREENSHOT_CONFIG['upload_format'] if upload else SCREENSHOT_CONFIG['save_format']
 
