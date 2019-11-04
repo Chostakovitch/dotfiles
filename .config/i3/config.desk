@@ -137,7 +137,7 @@ workspace 6 output HDMI-0
 exec --no-startup-id compton
 
 #start polybar
-exec_always --no-startup-id $HOME/.config/polybar/scripts/launch_polybar.sh
+exec --no-startup-id $HOME/.config/polybar/scripts/launch_polybar.sh
 
 #fr
 exec setxkbmap fr
@@ -190,23 +190,24 @@ exec --no-startup-id redshift-gtk
 # Set ALSA initial volume
 exec-always --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
-for_window [class="^Non-Mixer"] mark "jack", move scratchpad
-for_window [class="^Catia*"] mark "jack", move scratchpad
+for_window [class="Non-Mixer"] mark "jack", move scratchpad
+for_window [class="Catia*"] move to workspace 4
 for_window [class="^Signal"] mark "msg", move scratchpad
-for_window [class="^Thunderbird*"] mark "mail", move scratchpad
+for_window [class="Thunderbird"] mark "mail", move scratchpad
 bindsym $mod+Shift+t [con_mark="mail"] scratchpad show
 bindsym $mod+Shift+j [con_mark="jack"] scratchpad show
 bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
 
-for_window [class="Firefox"] move to workspace 3
+for_window [class="Terminator"] move to workspace 1
 for_window [class="Atom"] move to workspace 2
-for_window [class="Tor Browser"] move to workspace 5
+for_window [class="Firefox"] move to workspace 3
 for_window [class="Standard Notes"] move to workspace 4
+for_window [class="Tor Browser"] move to workspace 5
 
 exec standardnotes-desktop
 exec atom
 exec firefox
-
+exec terminator
 
 # Cadence will take care of all we need :
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
@@ -218,7 +219,7 @@ exec --no-startup-id catia
 exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
 
 # Set mouse acceleration
-exec_always --no-startup-id xinput set-prop 'pointer:Razer Razer DeathAdder Chroma' --type=float 'libinput Accel Speed' -.4
+exec --no-startup-id xinput set-prop 'pointer:Razer Razer DeathAdder Chroma' --type=float 'libinput Accel Speed' -.4
 
 # Communication
 exec thunderbird
