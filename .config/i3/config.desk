@@ -127,11 +127,11 @@ bindsym $mod+r mode "resize"
 
 #put workspace 1 on main screen
 workspace 1 output DVI-D-0
-workspace 2 output HDMI-0 
+workspace 2 output HDMI-0
 workspace 3 output DVI-D-0
-workspace 4 output HDMI-0 
+workspace 4 output HDMI-0
 workspace 5 output DVI-D-0
-workspace 6 output HDMI-0 
+workspace 6 output HDMI-0
 
 #start compositor
 exec --no-startup-id compton
@@ -208,7 +208,7 @@ exec atom
 exec firefox
 
 
-# Cadence will take care of all we need : 
+# Cadence will take care of all we need :
 # - Config tells Cadence to start LADISH, export MIDI hw and start A2J ;
 # - LADISH implies JACK starts, then it will starts needed apps (e.g. Non-Mixer)
 exec --no-startup-id cadence-session-start --start

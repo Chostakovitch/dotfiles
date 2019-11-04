@@ -15,7 +15,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = mouse
+    follow = none
 
     # The geometry of the window:
     #   [{width}]x{height}[+/-{x}+/-{y}]
@@ -174,7 +174,7 @@
     sticky_history = yes
 
     # Maximum amount of notifications kept in history
-    history_length = 20
+    history_length = 100
 
     ### Misc/Advanced ###
 
@@ -240,7 +240,7 @@
     history = ctrl+mod1+space
 
     # Context menu.
-    context = ctrl+mod1+period
+    context = ctrl+mod1+enter
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
