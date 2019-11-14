@@ -6,7 +6,13 @@
   title_font = DejaVu Sans Mono 11
   title_use_system_font = False
   use_custom_url_handler = True
+  title_transmit_bg_color = "#adbce6"
+  title_inactive_bg_color = "#C0BEBF"
+  title_receive_bg_color = "#adbce6"
 [keybindings]
+  broadcast_all = <Shift><Alt>a
+  broadcast_group = <Shift><Alt>g
+  broadcast_off = <Shift><Alt>q
   go_down = <Primary><Shift>Down
   go_left = <Primary><Shift>Left
   go_next = <Primary><Shift>n
@@ -25,6 +31,7 @@
   [[default]]
     [[[child1]]]
       parent = window0
+      profile = default
       type = Terminal
     [[[window0]]]
       parent = ""
@@ -38,5 +45,4 @@
     font = DejaVu Sans Mono 11
     scrollback_infinite = True
     scrollbar_position = hidden
-    show_titlebar = False
     use_system_font = False
