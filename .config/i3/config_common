@@ -1,0 +1,211 @@
+# i3 config file (v4)
+
+##################################
+# STARTING CONFIGURATION
+##################################
+# Mod1 = alt
+set $mod Mod1
+
+# font for window titles.
+font pango:Roboto, Bold 10
+
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# no border nor title
+new_window none
+
+# hide borders when touching edges
+hide_edge_borders both
+
+# do not sync mouse position and focus
+focus_follows_mouse no
+
+# script to lock the screen
+set $Locker ~/.config/i3/lock/lock.sh
+
+# settings for i3 gaps
+gaps inner 10
+gaps outer 0
+smart_gaps on
+
+##################################
+# PROGRAMS STARTED AUTOMATICALLY
+##################################
+
+#start compositor
+exec --no-startup-id compton
+
+#start polybar
+exec --no-startup-id $HOME/.config/polybar/scripts/launch_polybar.sh
+
+# configure keyboard layout
+exec setxkbmap fr
+
+# set numlock on
+exec numlockx on
+
+# turn to black screen after 9 minutes of doing nothing
+exec --no-startup-id xset dpms 600
+
+# autolock after 9 minutes of doing nothing
+exec --no-startup-id xautolock -time 9 -locker $Locker -corners ----
+
+# notifications
+exec dunst
+
+# gamma, color temp and brightness night adjuster
+exec redshift-gtk
+
+# set ALSA initial volume
+exec --no-startup-id amixer -D hw:PCH -M sset Master 50%
+
+# standard apps for working
+exec standardnotes-desktop
+exec atom
+exec firefox
+exec terminator
+exec thunderbird
+exec signal-desktop
+
+##################################
+# BINDINGS FOR STARTING PROGRAMS
+##################################
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run -theme sidebar
+bindsym $mod+Shift+d exec ~/.config/rofi/emoji-picker.py
+
+# just lock the screen
+bindsym $mod+l exec --no-startup-id $Locker && sleep 1
+
+# lock and suspend to RAM
+bindsym $mod+Shift+l exec --no-startup-id $Locker && systemctl suspend
+
+# open explorer without last tabs
+bindsym Mod4+e exec spacefm -n
+# open explorer with last tabs (sym to Ctrl+T, Ctrl+Maj+T)
+bindsym Mod4+Shift+e exec spacefm
+
+# screenshot and save to file
+bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
+# screenshot and upload to Lychee
+bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
+
+##################################
+# BINDINGS FOR STANDARD OPERATIONS
+##################################
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move containers
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+Shift+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# switch to workspace
+bindsym $mod+ampersand workspace number 1
+bindsym $mod+eacute workspace number 2
+bindsym $mod+quotedbl workspace number 3
+bindsym $mod+apostrophe workspace number 4
+bindsym $mod+parenleft workspace number 5
+bindsym $mod+minus workspace number 6
+bindsym $mod+egrave workspace number 7
+bindsym $mod+underscore workspace number 8
+bindsym $mod+ccedilla workspace number 9
+bindsym $mod+agrave workspace number 10
+
+# move focused container to workspace
+bindsym $mod+Shift+ampersand move container to workspace 1
+bindsym $mod+Shift+eacute move container to workspace 2
+bindsym $mod+Shift+quotedbl move container to workspace 3
+bindsym $mod+Shift+apostrophe move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+minus move container to workspace 6
+bindsym $mod+Shift+egrave move container to workspace 7
+bindsym $mod+Shift+underscore move container to workspace 8
+bindsym $mod+Shift+ccedilla move container to workspace 9
+bindsym $mod+Shift+agrave move container to workspace 10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize grow width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize shrink width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+##################################
+# OPERATIONS FOR SPECIFIC WINDOWS
+##################################
+
+# some windows will float automatically
+for_window [window_role="Steam"] floating enable
+for_window [window_role="About"] floating enable
+for_window [window_role="Organizer"] floating enable
+for_window [title="^Terminator *"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [title="Preferences$"] floating enable
+
+# scratchpad
+for_window [class="Signal"] mark "msg", move scratchpad
+for_window [class="Thunderbird"] mark "mail", move scratchpad
+bindsym $mod+Shift+t [con_mark="mail"] scratchpad show
+bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
+
+# automatic workspace
+for_window [class="Terminator"] move to workspace 1
+for_window [class="Atom"] move to workspace 2
+for_window [class="Firefox"] move to workspace 3
+for_window [class="Standard Notes"] move to workspace 4
+for_window [class="Tor Browser"] move to workspace 5
