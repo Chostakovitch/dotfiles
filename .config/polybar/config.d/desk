@@ -1,0 +1,59 @@
+; Common to top and bottom bars
+[bar/common]
+width = 100%
+enable-ipc = true
+height = 27
+foreground = ${colors.foreground}
+background = ${colors.background}
+line-size = 3
+line-color = #f00
+
+locale = fr_FR.UTF-8
+monitor = ${env:MONITOR:HDMI-0}
+
+[bar/chostytopbar]
+inherit = bar/common
+font-0 = NotoSans-Regular:size=10;2
+font-1 = MaterialIcons-Regular:size=11;4
+font-2 = Symbola:size=10;2
+font-3 = Weather Icons:size=10;3
+
+overline-size = 10
+underline-size = 10
+overline-color = ${self.background}
+underline-color = ${self.background}
+border-bottom-size = 1
+border-bottom-color = #333
+padding-left = 2
+padding-right = 10
+module-margin-left = 4
+module-margin-right = 4
+
+modules-left = powermenu system-uptime-pretty
+modules-center = xwindow
+modules-right = system-usb-udev volume date
+
+tray-position = right
+
+[module/volume]
+type = internal/volume
+
+master-soundcard = hw:PCH
+speaker-soundcard = hw:PCH
+headphone-soundcard = hw:PCH
+
+master-mixer = Master
+speaker-mixer = Front
+
+mapped = true
+
+format-volume = <ramp-volume> <label-volume>
+label-muted = 🔇 muted
+label-muted-foreground = #66
+
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 

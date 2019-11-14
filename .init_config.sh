@@ -69,9 +69,12 @@ for f in `find ${CONFIG} -type f -name ${DEST_FILENAME}`; do
 	done
 done
 
-echo -e "\n=== Generate i3 config file ==="
-cp ${CONFIG}/i3/config_common ${CONFIG}/i3/config
-for f in `find ${CONFIG}/i3/config.d -type f -name "${1}"`; do
-	echo "Found ${f}, add to regular config file"
-	cat "${f}" >> ${CONFIG}/i3/config
+merge_config="polybar i3"
+for m in $merge_config; do
+	echo -e "\n=== Generate ${m} config file ==="
+	cp ${CONFIG}/${m}/config_common ${CONFIG}/${m}/config
+	for f in `find ${CONFIG}/${m}/config.d -type f -name "${1}"`; do
+		echo "Found ${f}, add to regular config file"
+		cat "${f}" >> ${CONFIG}/${m}/config
+	done
 done
