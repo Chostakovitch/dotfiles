@@ -1,40 +1,10 @@
-; Common to top and bottom bars
-[bar/common]
+[variables]
 dpi = 150
-width = 100%
-enable-ipc = true
 height = 54
-foreground = ${colors.foreground}
-background = ${colors.background}
-line-size = 3
-line-color = #f00
-
-locale = fr_FR.UTF-8
-monitor = ${env:MONITOR:HDMI-0}
-
-[bar/chostytopbar]
-inherit = bar/common
-font-0 = NotoSans-Regular:size=10;2
-font-1 = MaterialIcons-Regular:size=11;4
-font-2 = Symbola:size=11;2
-font-3 = Weather Icons:size=10;3
-
-overline-size = 10
-underline-size = 10
-overline-color = ${self.background}
-underline-color = ${self.background}
-border-bottom-size = 1
-border-bottom-color = #333
-padding-left = 2
-padding-right = 10
-module-margin-left = 4
-module-margin-right = 4
-
-modules-left = powermenu system-uptime-pretty battery
-modules-center = xwindow
-modules-right = system-usb-udev pulseaudio date
-
-tray-position = right
+wireless_interface = wlp2s0
+top_left = powermenu system-uptime-pretty battery
+top_center = xwindow
+top_right = system-usb-udev pulseaudio date
 
 [module/pulseaudio]
 type = internal/pulseaudio

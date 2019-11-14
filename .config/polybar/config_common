@@ -9,6 +9,44 @@ accent = #fba922
 [global/wm]
 margin-top=50
 
+; Common to top and bottom bars
+[bar/common]
+width = 100%
+dpi = ${variables.dpi}
+enable-ipc = true
+height = ${variables.height}
+foreground = ${colors.foreground}
+background = ${colors.background}
+line-size = 3
+line-color = #f00
+
+locale = fr_FR.UTF-8
+monitor = ${env:MONITOR:HDMI-0}
+
+[bar/chostytopbar]
+inherit = bar/common
+font-0 = NotoSans-Regular:size=10;2
+font-1 = MaterialIcons-Regular:size=11;4
+font-2 = Symbola:size=10;2
+font-3 = Weather Icons:size=10;3
+
+overline-size = 10
+underline-size = 10
+overline-color = ${self.background}
+underline-color = ${self.background}
+border-bottom-size = 1
+border-bottom-color = #333
+padding-left = 2
+padding-right = 10
+module-margin-left = 4
+module-margin-right = 4
+
+modules-left = ${variables.top_left}
+modules-center = ${variables.top_center}
+modules-right = ${variables.top_right}
+
+tray-position = right
+
 [bar/chostybottombar]
 inherit = bar/common
 bottom = true
@@ -41,7 +79,7 @@ label-maxlen=100
 
 [module/wireless-network]
 type = internal/network
-interface = wlp8s0
+interface = ${variables.wireless_interface}
 interval = 1
 label-connected = %{F#ddd}%essid%    %local_ip%        %{F#77dd77}%{F-}%downspeed%     %{F#dd7777}%{F-}%upspeed%
 label-disconnected = Ethernet disconnected

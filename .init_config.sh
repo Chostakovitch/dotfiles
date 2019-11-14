@@ -78,3 +78,6 @@ for m in $merge_config; do
 		cat "${f}" >> ${CONFIG}/${m}/config
 	done
 done
+
+# Reload i3 configuration
+i3-msg reload && echo "Successfully reloaded i3 config"
