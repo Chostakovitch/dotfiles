@@ -1,5 +1,5 @@
 [variables]
-dpi = 100
+dpi = 90
 height = 27
 wireless_interface = wlp8s0
 top_left = powermenu system-uptime-pretty
