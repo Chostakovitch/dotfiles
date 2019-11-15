@@ -67,9 +67,10 @@ exec --no-startup-id amixer -D hw:PCH -M sset Master 50%
 exec standardnotes-desktop
 exec atom
 exec firefox
-exec terminator
 exec thunderbird
 exec signal-desktop
+
+exec --no-startup-ip i3-msg 'workspace number 1; exec terminator'
 
 ##################################
 # BINDINGS FOR STARTING PROGRAMS
@@ -214,7 +215,6 @@ bindsym $mod+Shift+t [con_mark="mail"] scratchpad show
 bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
 
 # automatic workspace
-assign [class="Terminator"] → number 1
 assign [class="Atom"] → number 2
 assign [class="Firefox"] → number 3
 assign [class="Standard Notes"] → number 4
