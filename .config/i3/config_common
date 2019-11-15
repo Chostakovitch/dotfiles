@@ -214,8 +214,8 @@ bindsym $mod+Shift+t [con_mark="mail"] scratchpad show
 bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
 
 # automatic workspace
-for_window [class="Terminator"] move to workspace 1
-for_window [class="Atom"] move to workspace 2
-for_window [class="Firefox"] move to workspace 3
-for_window [class="Standard Notes"] move to workspace 4
-for_window [class="Tor Browser"] move to workspace 5
+assign [class="Terminator"] → number 1
+assign [class="Atom"] → number 2
+assign [class="Firefox"] → number 3
+assign [class="Standard Notes"] → number 4
+assign [class="Tor Browser"] → number 5
