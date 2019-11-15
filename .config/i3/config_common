@@ -6,6 +6,9 @@
 # Mod1 = alt
 set $mod Mod1
 
+set $resize_mode Resize: [←] [→] [↑] [↓]
+set $film_mode Film Mode: [u]p [d]own
+
 # font for window titles.
 font pango:Roboto, Bold 10
 
@@ -94,8 +97,12 @@ bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
 # screenshot and upload to Lychee
 bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
 
+mode "$mode_film" {
+  bindsym u exec ~/.config/i3/scripts/film_mode.sh on
+  bindsym d exec ~/.config/i3/scripts/film_mode.sh off
+}
 # toggle film mode
-bindsym $mod+Shift+f exec ~/.config/i3/scripts/film_mode.sh
+bindsym $mod+Shift+f mode "$mode_film"
 
 ##################################
 # BINDINGS FOR STANDARD OPERATIONS
@@ -169,7 +176,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
+mode "$mode_resize" {
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
@@ -185,7 +192,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "$mode_resize"
 
 ##################################
 # OPERATIONS FOR SPECIFIC WINDOWS
