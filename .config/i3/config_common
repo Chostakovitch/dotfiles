@@ -101,6 +101,7 @@ bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
 mode "$mode_film" {
   bindsym u exec ~/.config/i3/scripts/film_mode.sh on
   bindsym d exec ~/.config/i3/scripts/film_mode.sh off
+  bindsym Escape mode "default"
 }
 # toggle film mode
 bindsym $mod+Shift+f mode "$mode_film"
@@ -178,18 +179,10 @@ bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
 mode "$mode_resize" {
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-
-        # same bindings, but for the arrow keys
         bindsym Left resize grow width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize shrink width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
         bindsym Escape mode "default"
 }
 
