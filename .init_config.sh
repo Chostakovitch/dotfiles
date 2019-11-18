@@ -9,15 +9,15 @@ DEST_FILENAME="dest"
 # $2 : command to launch if file has been created of modifed
 # $3 : command to launch if file has been deleted
 function check_copy() {
-	echo "$changed_files" | grep --quiet "$1"
+	echo "$changed_files" | grep --quiet "${1#$HOME/}"
 	if [ $? == "0" ]; then
-		echo "$changed_files" | cut -f 1 | grep --quiet "R"
+		echo "$changed_files" | cut -f 1 | grep --quiet "D"
 		if [ $? == "0" ]; then
 			echo "* $1 has been removed"
-			echo "* Running $3" && eval "$3"
+			echo -e "\t* Running \"$3\"" && eval "$3"
 		else
 			echo "* Changes detected in $1"
-			echo "* Running $2" && eval "$2"
+			echo -e "* Running \"$2\"" && eval "$2"
 		fi
 	fi
 }
@@ -65,7 +65,7 @@ for f in `find ${CONFIG} -type f -name ${DEST_FILENAME}`; do
 	# This is because if desktop/laptop files exist, they already have a symlink pointing to them at this stage
 	for config_file in `find ${DIR} -maxdepth 1 -mindepth 1 -not \( -name "*.${LAPTOP}" -o -name "*.${DESKTOP}" -o -name "${DEST_FILENAME}" \)`; do
 		# Now copy to destination
-		check_copy "${config_file}" "sudo cp ${config_file} ${DEST}" "sudo rm ${DEST}"
+		check_copy "${config_file}" "sudo cp ${config_file} ${DEST}" "sudo rm ${DEST}/${config_file##*/}"
 	done
 done
 
