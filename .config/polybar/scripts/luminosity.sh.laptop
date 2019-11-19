@@ -1,0 +1,4 @@
+#!/bin/bash
+
+lum=$(xbacklight -get)
+echo "%{F#77dd77}☀️%{F#ddd}  ${lum}%"

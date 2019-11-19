@@ -4,7 +4,12 @@ height = 54
 wireless_interface = wlp2s0
 top_left = powermenu system-uptime-pretty battery
 top_center = xwindow
-top_right = system-usb-udev pulseaudio date
+top_right = system-usb-udev luminosity pulseaudio date
+
+[module/luminosity]
+type = custom/script
+exec = ~/.config/polybar/scripts/luminosity.sh
+interval = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio

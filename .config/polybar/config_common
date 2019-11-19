@@ -81,7 +81,7 @@ label-maxlen=100
 type = internal/network
 interface = ${variables.wireless_interface}
 interval = 1
-label-connected = %{F#ddd}%essid%    %local_ip%        %{F#77dd77}%{F-}%downspeed%     %{F#dd7777}%{F-}%upspeed%
+label-connected = %{F#ddd}%essid%    %local_ip%        %{F#77dd77}%{F-} %downspeed%     %{F#dd7777}%{F-} %upspeed%
 label-disconnected = Ethernet disconnected
 label-disconnected-foreground = #66
 

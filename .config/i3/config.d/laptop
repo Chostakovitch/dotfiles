@@ -14,9 +14,13 @@ workspace 6 output HDMI-0
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D hw:PCH -M sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id aimxer -D hw:PCH -M sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -D hw:PCH -M sset 'Master' toggle
-bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
-bindsym XF86AudioPrev exec --no-startup-ip playerctl prev
-bindsym XF86AudioNext exec --no-startup-id playerctl next
+
+# Luminosity on laptop (not xorg-xbacklight but the compatible and working acpilight)
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10 -steps 200
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 -steps 200
+bindsym XF86KbdBrightnessDown exec --no-startup-id xbacklight -ctrl asus::kbd_backlight -dec 30
+bindsym XF86KbdBrightnessUp exec --no-startup-id xbacklight -ctrl asus::kbd_backlight -inc 30
+
 
 # set DPI along with .Xresources
 exec xrandr --dpi 160
