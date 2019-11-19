@@ -203,6 +203,7 @@ bindsym $mod+r mode "$resize_mode"
 ##################################
 
 # some windows will float automatically
+for_window [class="Thunderbird"] floating enable
 for_window [window_role="Steam"] floating enable
 for_window [window_role="About"] floating enable
 for_window [window_role="Organizer"] floating enable
@@ -211,14 +212,17 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 for_window [title="Preferences$"] floating enable
 
+for_window [class="Thunderbird"] move position center
+
 # scratchpad
-for_window [class="Signal"] mark "msg", move scratchpad
-for_window [class="Thunderbird"] mark "mail", move scratchpad
-bindsym $mod+Shift+t [con_mark="mail"] scratchpad show
-bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
+for_window [class="Signal"] move scratchpad
+# we don't use class="Thunderbird" to not move windows like "MsgCompose" to scratchpad : only the main window will be in scratchpad
+for_window [instance="Mail"] move scratchpad
+bindsym $mod+Shift+t [instance="Mail"] scratchpad show
+bindsym $mod+Shift+s [class="Signal"] scratchpad show, move position center
 
 # automatic workspace
-assign [class="Atom"] → number 2
-assign [class="firefox"] → number 3
-assign [class="Standard Notes"] → number 4
-assign [class="Tor Browser"] → number 5
+assign [class="(?i)Atom"] → number 2
+assign [class="(?i)Firefox"] → number 3
+assign [class="(?i)Standard Notes"] → number 4
+assign [class="(?i)Tor Browser"] → number 5

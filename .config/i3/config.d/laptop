@@ -44,3 +44,7 @@ exec --no-startup-id xinput set-prop 'Microsoft Microsoft 3-Button Mouse with In
 ##################################
 # OPERATIONS FOR SPECIFIC WINDOWS
 ##################################
+
+# Larger Thunderbird floating window
+for_window [class="Mail"] resize set 2500 1500
+for_window [class="Signal"] resize set 2500 1500
