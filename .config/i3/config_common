@@ -112,6 +112,12 @@ mode "$film_mode" {
 # toggle film mode
 bindsym $mod+Shift+f mode "$film_mode"
 
+# read 1 character and mark the current window with this character
+bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
+
+# read 1 character and go to the window with the character
+bindsym $mod+Shift+m exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
+
 ##################################
 # BINDINGS FOR STANDARD OPERATIONS
 ##################################
