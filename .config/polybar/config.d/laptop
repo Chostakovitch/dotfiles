@@ -4,7 +4,16 @@ height = 54
 wireless_interface = wlp2s0
 top_left = powermenu system-uptime-pretty battery
 top_center = xwindow
-top_right = system-usb-udev luminosity pulseaudio date
+top_right = system-usb-udev backlight pulseaudio date
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+label = %{F#77dd77}☀️%{F#ddd}  %percentage%%
+bar-width = 10
+bar-indicator = |
+bar-fill = ─
+bar-empty = ─
 
 [module/luminosity]
 type = custom/script
