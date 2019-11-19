@@ -14,7 +14,7 @@
 
 <!-- /MarkdownTOC -->
 
-## What is this, Chosto ? 
+## What is this, Chosto ?
 
 I used a lot Debian/Ubuntu with Gnome. So a full Desktop Manager with a stacking Windows Manager.
 A friend of mine showed me i3, a great and customizable tiling Windows Manager (i.e. no windows stack, just divide the scren and take all empty space).
@@ -28,7 +28,7 @@ I added to the classic Arch/i3 :
 * A fancy lock screen, with optionnal suspend-to-RAM, either triggered by hotkey or when there is no activity for X minutes.
 * A Display Manager (LightDM), for login and X starting.
 * A great File Explorer (SpaceFM), with hotkey / command-line / screen-split / protocol handlers / events support.
-* ZSH with Oh My ZSH and excellent community plugins (Git aliases, Docker autocomplete, FASD bindings, cat and man coloration...) 
+* ZSH with Oh My ZSH and excellent community plugins (Git aliases, Docker autocomplete, FASD bindings, cat and man coloration...)
 * Some mappings to control ALSA volume from dedicated keyboards buttons, to play/plause players compatible with MPRIS D-Bus Interface spec ; some changes to key speed (X settings) ; Smooth and dark theme for GTK and for Sublime-Text...
 
 ## Contents
@@ -44,7 +44,7 @@ Setup for :
 * Terminator
 * ZSH with Oh My ZSH!
 * [Dunst](https://github.com/dunst-project/dunst), a great and lightweight notification daemon
-* [Rofi](https://github.com/DaveDavenport/rofi), a full-customizable app launcher/windows 
+* [Rofi](https://github.com/DaveDavenport/rofi), a full-customizable app launcher/windows
 switcher
 * Sound setup (total beginner there btw) :
   * JACK, a sound server, without PA support ;
@@ -56,10 +56,10 @@ switcher
 * A custom script to take screenshots and save them or upload them
 * Screenshots (area or windows), with saving or uploading to a Lychee server ([custom script here](.config/i3/scripts/screenshot.py))
 
-Here is a screenshot of the rendition i3/polybar with this setup (and yeah, I use nano, sorry to disappoint)
-![Screenshot of i3/polybar](https://pic.chosty.fr/uploads/big/22c75dc7901223204e0e9c798506b435.png)
+Here is a screenshot of the rendition i3-gaps/polybar.
+![Screenshot of i3/polybar](https://pic.chosty.fr/uploads/big/111928c68c111dbcd357a69cf13589d6.jpg)
 
-## Requirements 
+## Requirements
 
 Configuration makes use of these things, just to record but not exhaustive :
 
@@ -67,7 +67,7 @@ Configuration makes use of these things, just to record but not exhaustive :
 * [fasd](https://github.com/clvv/fasd)
 * [Pygments](http://pygments.org/) (with `pygmentize` command)
 * [Powerline Fonts](https://github.com/powerline/fonts)
-* `sudo pip install --upgrade google-api-python-client` 
+* `sudo pip install --upgrade google-api-python-client`
 * [SpaceFM](https://ignorantguru.github.io/spacefm/)
 * [PlayerCTL](https://github.com/acrisci/playerctl)
 * [GTK Arc Theme](https://github.com/horst3180/arc-theme)
@@ -82,7 +82,7 @@ Configuration makes use of these things, just to record but not exhaustive :
 
 ## Usage
 
-Please note : on my system `XDG_CONFIG_HOME` is empty and default to `$HOME/.config`. 
+Please note : on my system `XDG_CONFIG_HOME` is empty and default to `$HOME/.config`.
 
 ### Bare repository trick
 
@@ -95,7 +95,7 @@ Please note : on my system `XDG_CONFIG_HOME` is empty and default to `$HOME/.con
 
 Credits to [this great article](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/) for the trick.
 
-### Divergence betwteen laptop and desktop 
+### Divergence betwteen laptop and desktop
 
 As desktop machine and laptop don't have configuration conflicts (e.g. laptop uses PulseAudio and desktop uses ALSA/Jack), some files have `.desk` extension and others `.laptop`. Configuration files that works on both systems have no extension.
 
