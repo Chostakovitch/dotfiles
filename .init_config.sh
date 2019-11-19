@@ -72,6 +72,7 @@ done
 merge_config="polybar i3"
 for m in $merge_config; do
 	echo -e "\n=== Generate ${m} config file ==="
+	rm -f ${CONFIG}/${m}/config
 	cp ${CONFIG}/${m}/config_common ${CONFIG}/${m}/config
 	for f in `find ${CONFIG}/${m}/config.d -type f -name "${1}"`; do
 		echo "Found ${f}, add to regular config file"

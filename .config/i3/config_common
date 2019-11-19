@@ -24,6 +24,12 @@ hide_edge_borders both
 # do not sync mouse position and focus
 focus_follows_mouse no
 
+# if a popup is coming when an app is fullscreen, leave the fullscreen
+popup_during_fullscreen leave_fullscreen
+
+# let urgency hint when switching to workspace
+force_display_urgency_hint 500 ms
+
 # script to lock the screen
 set $Locker ~/.config/i3/lock/lock.sh
 
@@ -37,7 +43,7 @@ smart_gaps on
 ##################################
 
 #start compositor
-exec --no-startup-id compton
+exec --no-startup-id picom
 
 #start polybar
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch_polybar.sh
@@ -70,7 +76,7 @@ exec firefox
 exec thunderbird
 exec signal-desktop
 
-exec --no-startup-ip i3-msg 'workspace number 1; exec terminator'
+exec --no-startup-ip i3-msg 'workspace number 1; exec i3-sensible-terminal'
 
 ##################################
 # BINDINGS FOR STARTING PROGRAMS
@@ -134,9 +140,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+t layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+e layout toggle split tabbed stacking
 
 # toggle tiling / floating
 bindsym $mod+space floating toggle
@@ -209,6 +213,6 @@ bindsym $mod+Shift+s [con_mark="msg"] scratchpad show
 
 # automatic workspace
 assign [class="Atom"] → number 2
-assign [class="Firefox"] → number 3
+assign [class="firefox"] → number 3
 assign [class="Standard Notes"] → number 4
 assign [class="Tor Browser"] → number 5
