@@ -118,6 +118,8 @@ bindsym $mod+m exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 # read 1 character and go to the window with the character
 bindsym $mod+Shift+m exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 
+bindsym $mod+p exec picamenu
+
 ##################################
 # BINDINGS FOR STANDARD OPERATIONS
 ##################################
