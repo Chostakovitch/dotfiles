@@ -2,14 +2,6 @@
 # STARTING CONFIGURATION
 ##################################
 
-# alterning workspace between each screen
-workspace 1 output DVI-D-0
-workspace 2 output HDMI-0
-workspace 3 output DVI-D-0
-workspace 4 output HDMI-0
-workspace 5 output DVI-D-0
-workspace 6 output HDMI-0
-
 # ALSA keybinding
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D hw:PCH -M sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id aimxer -D hw:PCH -M sset Master 5%-
