@@ -19,4 +19,10 @@
 	Gain_Module 0x24 create :parameter_values "0.000000:0.000000" :is_default 1 :chain 0x22 :active 1
 	Meter_Module 0x25 create :is_default 1 :chain 0x22 :active 1
 	JACK_Module 0x26 create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x22 :active 1
+	Mixer_Strip 0x28 create :name "Audacity" :width "narrow" :tab "fader" :color 1957747793 :gain_mode 0 :mute_mode 0 :group 0xD :auto_input "" :manual_connection 0
+	Chain 0x29 create :strip 0x28 :tab "chain"
+	JACK_Module 0x2A create :parameter_values "0.000000:2.000000" :is_default 1 :chain 0x29 :active 1
+	Gain_Module 0x2B create :parameter_values "0.000000:0.000000" :is_default 1 :chain 0x29 :active 1
+	Meter_Module 0x2C create :is_default 1 :chain 0x29 :active 1
+	JACK_Module 0x2D create :parameter_values "2.000000:0.000000" :is_default 1 :chain 0x29 :active 1
 }

@@ -16,8 +16,14 @@ vlc.*?2$
 .*:Firefox/in-2
 
 # PianoTeq
+
+# PianoTeq
 Pianoteq.*?1$
 .*:PianoTeq/in-1
 
 Pianoteq.*?2$
 .*:PianoTeq/in-2
+
+# Audacity
+PortAudio:out_\d
+.*:Audacity/in-1
