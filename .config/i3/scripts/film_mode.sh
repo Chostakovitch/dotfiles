@@ -30,7 +30,7 @@ function off() {
 
 if [ "${1}" == "${ON}" ]; then
   on
-elif [ "${1}" == "${ON}" ]; then
+elif [ "${1}" == "${OFF}" ]; then
   off
 else
   pgrep xautolock &>/dev/null
