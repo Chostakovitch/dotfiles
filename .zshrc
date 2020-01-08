@@ -113,7 +113,7 @@ alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net 
 # Start ssh-agent and retain passphrase for 1 hour
 # ssh-add is not used for convenience
 # Instead "AddKeysToAgent yes" option in ~/.ssh/config for "Host *"
-eval "$(ssh-agent -s -t 3600)"
+eval "$(ssh-agent -s -t 3600)" &>/dev/null
 
 alias lt='ls -lath'
 export PATH=${PATH}:~/picasoft/pass

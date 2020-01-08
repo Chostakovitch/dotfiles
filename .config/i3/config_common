@@ -94,10 +94,8 @@ bindsym $mod+l exec --no-startup-id $Locker && sleep 1
 # lock and suspend to RAM
 bindsym $mod+Shift+l exec --no-startup-id $Locker && systemctl suspend
 
-# open explorer without last tabs
-bindsym Mod4+e exec spacefm -n
-# open explorer with last tabs (sym to Ctrl+T, Ctrl+Maj+T)
-bindsym Mod4+Shift+e exec spacefm
+# open Explorer
+bindsym Mod4+e exec nemo
 
 # screenshot and save to file
 bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
