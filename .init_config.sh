@@ -82,3 +82,7 @@ done
 
 # Reload i3 configuration
 i3-msg reload && echo "Successfully reloaded i3 config"
+
+# Restart picom due to this bug https://github.com/yshui/picom/issues/166
+killall picom; picom &>/dev/null &
+

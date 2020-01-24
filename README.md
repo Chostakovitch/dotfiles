@@ -27,7 +27,7 @@ I added to the classic Arch/i3 :
 * A notification daemon (urgency-aware), Dunst, controlled by shortcuts (but possibly with mouse).
 * A fancy lock screen, with optionnal suspend-to-RAM, either triggered by hotkey or when there is no activity for X minutes.
 * A Display Manager (LightDM), for login and X starting.
-* A great File Explorer (SpaceFM), with hotkey / command-line / screen-split / protocol handlers / events support.
+* A great File Explorer (Nemo), with hotkey / command-line / screen-split / protocol handlers / events support.
 * ZSH with Oh My ZSH and excellent community plugins (Git aliases, Docker autocomplete, FASD bindings, cat and man coloration...)
 * Some mappings to control ALSA volume from dedicated keyboards buttons, to play/plause players compatible with MPRIS D-Bus Interface spec ; some changes to key speed (X settings) ; Smooth and dark theme for GTK and for Sublime-Text...
 
