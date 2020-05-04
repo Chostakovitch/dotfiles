@@ -54,7 +54,7 @@ def read_args(argv):
 def screenshot(img_format):
     output = '/tmp/screenshot'
     proc = subprocess.run(['maim', '-sl', '--color=0.6,0.4,0.2,0.2', '-f', img_format, '-u', '-m', '9', '-b', '5', output], check=True)
-    with open(output) as f:
+    with open(output, 'rb') as f:
         return f.read()
 
 def save_img(path, img, img_format):
