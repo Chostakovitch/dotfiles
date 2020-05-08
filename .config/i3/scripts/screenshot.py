@@ -87,7 +87,7 @@ def login():
 
     if r.status_code != 200:
         raise RuntimeError("Cannot login to Lychee!")
-
+    
     return s
 
 def get_album_id(session, name):
