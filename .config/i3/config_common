@@ -218,12 +218,12 @@ for_window [class="Thunderbird"] move position center
 
 # scratchpad
 for_window [class="Signal"] move scratchpad
-for_window [instance="telegram-desktop"] move scratchpad
+for_window [class="telegram-desktop"] move scratchpad
 # we don't use class="Thunderbird" to not move windows like "MsgCompose" to scratchpad : only the main window will be in scratchpad
 for_window [instance="Mail"] move scratchpad
 bindsym $mod+Shift+m [instance="Mail"] scratchpad show, move position center
 bindsym $mod+Shift+s [class="Signal"] scratchpad show, move position center
-bindsym $mod+Shift+t [instance="telegram-desktop"] scratchpad show, move position center
+bindsym $mod+Shift+t [class="telegram-desktop"] scratchpad show, move position center
 
 # automatic workspace
 assign [class="(?i)Atom"] → number 2

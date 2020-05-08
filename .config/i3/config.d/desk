@@ -54,4 +54,4 @@ bindsym $mod+Shift+v [con_mark="mixer"] scratchpad show
 
 for_window [class="Mail"] resize set 1600 850
 for_window [class="Signal"] resize set 1600 850
-for_window [instance="telegram-desktop"] resize set 1600 850
+for_window [class="telegram-desktop"] resize set 1600 850
