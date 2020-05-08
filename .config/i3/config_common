@@ -215,8 +215,6 @@ for_window [title="Preferences$"] floating enable
 for_window [class="telegram-desktop"] floating enable
 
 for_window [class="Thunderbird"] move position center
-for_window [class="Signal"] move position center
-for_window [instance="telegram-desktop"] move position center
 
 # scratchpad
 for_window [class="Signal"] move scratchpad
@@ -225,7 +223,7 @@ for_window [instance="telegram-desktop"] move scratchpad
 for_window [instance="Mail"] move scratchpad
 bindsym $mod+Shift+m [instance="Mail"] scratchpad show, move position center
 bindsym $mod+Shift+s [class="Signal"] scratchpad show, move position center
-bindsym $mod+Shift+t [instance="telegram-desktop] scratchpad show, move position center
+bindsym $mod+Shift+t [instance="telegram-desktop"] scratchpad show, move position center
 
 # automatic workspace
 assign [class="(?i)Atom"] → number 2
