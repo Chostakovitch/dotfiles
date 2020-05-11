@@ -27,3 +27,7 @@ Pianoteq.*?2$
 # Audacity
 PortAudio:out_\d
 .*:Audacity/in-1
+
+# Mumble
+mumble:output_1
+.*:Mumble/in-1
