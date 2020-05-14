@@ -99,7 +99,7 @@ bindsym $mod+Shift+l exec --no-startup-id $Locker && systemctl suspend
 bindsym Mod4+e exec nemo
 
 # screenshot and save to file
-bindsym $mod+Print exec ~/.config/i3/scripts/screenshot.py -s
+bindsym Shift+Print exec ~/.config/i3/scripts/screenshot.py -s
 # screenshot and upload to Lychee
 bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
 
