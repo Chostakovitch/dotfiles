@@ -9,16 +9,11 @@ top_right = system-usb-udev backlight pulseaudio date
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
-label = %{F#77dd77}☀️%{F#ddd}  %percentage%%
+label = %{F#77dd77}☀️%{F#ddd} %percentage%%
 bar-width = 10
 bar-indicator = |
 bar-fill = ─
 bar-empty = ─
-
-[module/luminosity]
-type = custom/script
-exec = ~/.config/polybar/scripts/luminosity.sh
-interval = 1
 
 [module/pulseaudio]
 type = internal/pulseaudio
