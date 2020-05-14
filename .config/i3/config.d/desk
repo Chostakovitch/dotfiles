@@ -3,11 +3,11 @@
 ##################################
 
 # alterning workspace between each screen
-workspace 1 output DVI-D-0
+workspace 1 output DVI-I-1
 workspace 2 output HDMI-0
-workspace 3 output DVI-D-0
+workspace 3 output DVI-I-1
 workspace 4 output HDMI-0
-workspace 5 output DVI-D-0
+workspace 5 output DVI-I-1
 workspace 6 output HDMI-0
 
 # ALSA key binding (media keys do not even have keycode...)
@@ -50,7 +50,8 @@ exec --no-startup-id xinput set-prop 'pointer:Razer Razer DeathAdder Chroma' --t
 for_window [class="Non-Mixer"] mark "mixer", move scratchpad
 for_window [class="Catia*"] mark "jack", move scratchpad
 bindsym $mod+Shift+j [con_mark="jack"] scratchpad show
-bindsym $mod+Shift+n [con_mark="mixer"] scratchpad show
+bindsym $mod+Shift+v [con_mark="mixer"] scratchpad show
 
 for_window [class="Mail"] resize set 1600 850
 for_window [class="Signal"] resize set 1600 850
+for_window [class="Telegram"] resize set 1600 850
