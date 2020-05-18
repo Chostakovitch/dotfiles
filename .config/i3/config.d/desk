@@ -8,7 +8,10 @@ workspace 2 output HDMI-0
 workspace 3 output DVI-I-1
 workspace 4 output HDMI-0
 workspace 5 output DVI-I-1
-workspace 6 output HDMI-0
+workspace 6 output DVI-I-1
+workspace 7 output DVI-I-1
+workspace 8 output DVI-I-1
+workspace 9 output DVI-I-1
 
 # ALSA key binding (media keys do not even have keycode...)
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D hw:PCH -M sset Master 5%+
