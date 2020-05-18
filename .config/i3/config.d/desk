@@ -34,6 +34,9 @@ exec --no-startup-id jack-matchmaker -p ~/.config/jack-matchmaker/patterns
 # set mouse acceleration
 exec --no-startup-id xinput set-prop 'pointer:Razer Razer DeathAdder Chroma' --type=float 'libinput Accel Speed' -.4
 
+# Start ALSA/Jack bridge for RODE mic
+exec_always --no-startup-id zita-a2j -d hw:Mini -j Rode -c 1
+
 ##################################
 # BINDINGS FOR STARTING PROGRAMS
 ##################################
