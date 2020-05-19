@@ -8,11 +8,15 @@ vlc.*?2$
 
 # == Firefox, all tabs mixed in one : volume per tab is managed through players directly ==
 # FF Left
-.*?:Audio.*?0$
+.*?:AudioStream.*?out_0$
+.*:Firefox/in-1
+.*?:AudioCallback.*?out_0$
 .*:Firefox/in-1
 
 # FF Right
-.*?:AudioStream.*?1$
+.*?:AudioStream.*?out_1$
+.*:Firefox/in-2
+.*?:AudioCallback.*?out_1$
 .*:Firefox/in-2
 
 # PianoTeq
@@ -31,3 +35,9 @@ PortAudio:out_\d
 # Mumble
 mumble:output_1
 .*:Mumble/in-1
+
+# Microphone
+.*?:capture_1
+.*?:AudioCallback.*?in_0$
+.*?:capture_1$
+.*?:in_1$
