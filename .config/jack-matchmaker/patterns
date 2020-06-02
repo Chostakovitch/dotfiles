@@ -37,7 +37,7 @@ mumble:output_1
 .*:Mumble/in-1
 
 # Microphone
-.*?:capture_1
+.*?:capture_1$
 .*?:AudioCallback.*?in_0$
 .*?:capture_1$
 .*?:in_1$
