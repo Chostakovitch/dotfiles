@@ -71,8 +71,8 @@ exec --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
 # standard apps for working
 exec standardnotes-desktop
-exec atom
-exec firefox
+exec --no-startup-id i3-msg 'workspace 2; exec atom'
+exec --no-startup-id i3-msg 'workspace 3; exec firefox'
 exec thunderbird
 exec signal-desktop
 exec telegram-desktop
@@ -230,7 +230,5 @@ bindsym $mod+Shift+s [class="Signal"] scratchpad show, move position center
 bindsym $mod+Shift+t [class="Telegram"] scratchpad show, move position center
 
 # automatic workspace
-assign [class="(?i)Atom"] → number 2
-assign [class="(?i)Firefox"] → number 3
 assign [class="(?i)Standard Notes"] → number 4
 assign [class="(?i)Tor Browser"] → number 5
