@@ -116,6 +116,6 @@ alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net 
 eval "$(ssh-agent -s -t 3600)" &>/dev/null
 
 alias lt='ls -lath'
-export PATH=${PATH}:~/picasoft/pass:$HOME/go/bin/
+export PATH=${PATH}:~/picasoft/pass:$HOME/go/bin/:$HOME/.local/bin
 
 source <(mmctl completion zsh)
