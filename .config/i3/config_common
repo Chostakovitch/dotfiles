@@ -118,7 +118,8 @@ bindsym $mod+n exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
 bindsym $mod+Shift+n exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 
 # pass
-bindsym $mod+p exec picamenu
+bindsym $mod+p exec passmenu
+bindsym $mod+Shift+p exec picamenu
 
 # open config folder in editor
 bindsym $mod+c exec atom ~/.config
