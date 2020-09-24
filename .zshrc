@@ -106,8 +106,7 @@ alias ovh='mkdir -p ~/sshfs/ovh && sshfs chosto@51.178.182.35:/home/chosto ~/ssh
 alias pica01='mkdir -p ~/sshfs/pica01 && sshfs qduchemi@pica01.picasoft.net:/DATA/docker ~/sshfs/pica01'
 alias pica02='mkdir -p ~/sshfs/pica02 && sshfs qduchemi@pica02.picasoft.net:/DATA/docker ~/sshfs/pica02'
 alias pica_test='mkdir -p ~/sshfs/pica01-test && sshfs qduchemi@pica01-test.picasoft.net:/DATA/docker ~/sshfs/pica01-test'
-alias sshfs_u='find ~/sshfs -mindepth 1 -maxdepth 1 -type d -exec umount {} \;'
-alias aconfig='atom ~/.config'
+
 # Start ssh-agent and retain passphrase for 1 hour
 # ssh-add is not used for convenience
 # Instead "AddKeysToAgent yes" option in ~/.ssh/config for "Host *"

@@ -124,6 +124,8 @@ bindsym $mod+Shift+p exec picamenu
 # open config folder in editor
 bindsym $mod+c exec atom ~/.config
 
+# umount all SSHFS
+bindsym $mod+Shift+u exec ~/.config/i3/scripts/umount_sshfs.sh
 ##################################
 # BINDINGS FOR STANDARD OPERATIONS
 ##################################
