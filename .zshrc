@@ -102,13 +102,11 @@ alias cp="cpv"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Mount VPS as FUSE
-alias ovh='sshfs chosto@51.75.250.228:/home/chosto /mnt/ovh'
-alias pica01='sshfs qduchemi@pica01.picasoft.net:/DATA/docker /mnt/pica01'
-alias pica02='sshfs qduchemi@pica02.picasoft.net:/DATA/docker /mnt/pica02'
-alias pica_test='sshfs qduchemi@pica01-test.picasoft.net:/DATA/docker /mnt/pica01-test'
-
-# SSH port forwarding for Picasoft LDAP
-alias ldap_pica='sudo ssh -L 389:localhost:389 qduchemi@monitoring.picasoft.net -i ~/.ssh/id_rsa'
+alias ovh='mkdir -p ~/sshfs/ovh && sshfs chosto@51.75.250.228:/home/chosto ~/sshfs/ovh'
+alias pica01='mkdir -p ~/sshfs/pica01 && sshfs qduchemi@pica01.picasoft.net:/DATA/docker ~/sshfs/pica01'
+alias pica02='mkdir -p ~/sshfs/pica02 && sshfs qduchemi@pica02.picasoft.net:/DATA/docker ~/sshfs/pica02'
+alias pica_test='mkdir -p ~/sshfs/pica01-test && sshfs qduchemi@pica01-test.picasoft.net:/DATA/docker ~/sshfs/pica01-test'
+alias sshfs_u='find ~/sshfs -mindepth 1 -maxdepth 1 -type d -exec umount {} \;'
 
 # Start ssh-agent and retain passphrase for 1 hour
 # ssh-add is not used for convenience
