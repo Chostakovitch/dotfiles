@@ -102,7 +102,7 @@ alias cp="cpv"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Mount VPS as FUSE
-alias ovh='mkdir -p ~/sshfs/ovh && sshfs chosto@51.75.250.228:/home/chosto ~/sshfs/ovh'
+alias ovh='mkdir -p ~/sshfs/ovh && sshfs chosto@51.178.182.35:/home/chosto ~/sshfs/ovh -p 2220'
 alias pica01='mkdir -p ~/sshfs/pica01 && sshfs qduchemi@pica01.picasoft.net:/DATA/docker ~/sshfs/pica01'
 alias pica02='mkdir -p ~/sshfs/pica02 && sshfs qduchemi@pica02.picasoft.net:/DATA/docker ~/sshfs/pica02'
 alias pica_test='mkdir -p ~/sshfs/pica01-test && sshfs qduchemi@pica01-test.picasoft.net:/DATA/docker ~/sshfs/pica01-test'
