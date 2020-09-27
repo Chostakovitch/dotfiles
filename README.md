@@ -38,9 +38,9 @@ Setup for :
 * [i3](http://i3wm.org/), a great tiling windows manager
   * In fact i3-gaps, to add margins between windows
   * And i3-lock-color, an improved lock screen
-* [LightDM](https://wiki.ubuntu.com/LightDM) with custom GTKTheme and background
+* [LightDM](https://wiki.ubuntu.com/LightDM) with custom theme and background
 * Sublime Text 3
-* [Polybar](https://github.com/jaagr/polybar/), a great replacement for i3-bar with easy custom plugins
+* [Polybar](https://github.com/jaagr/polybar/), a great replacement for i3-bar with easy custom plugins and [system tray](https://specifications.freedesktop.org/systemtray-spec/systemtray-spec-0.3.html)
 * Terminator
 * ZSH with Oh My ZSH!
 * [Dunst](https://github.com/dunst-project/dunst), a great and lightweight notification daemon
@@ -52,7 +52,7 @@ switcher
   * Cadence and Claudia, JACK and LADISH front-ends ;
   * Non-Mixer, a mixer.
   * Ardour, a DAW.
-* Random things (GTK3+ theme, Redshift, taskwarrior...)
+* Random things (GTK3+ theme Arc, Redshift, taskwarrior...)
 * A custom script to take screenshots and save them or upload them
 * Screenshots (area or windows), with saving or uploading to a Lychee server ([custom script here](.config/i3/scripts/screenshot.py))
 
@@ -76,9 +76,7 @@ Configuration makes use of these things, just to record but not exhaustive :
 * gnupg
 * maim, for screenshot + `pip install pyperclip`
 * Python 3.7
-* opensmtpd
-
-\#todo automatic installation of dependencies
+* arc-gtk-theme
 
 ## Usage
 
