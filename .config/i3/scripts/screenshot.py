@@ -87,7 +87,7 @@ def login():
 
     if r.status_code != 200:
         raise RuntimeError("Cannot login to Lychee!")
-    
+
     return s
 
 def get_album_id(session, name):
@@ -96,6 +96,7 @@ def get_album_id(session, name):
         raise RuntimeError("API call didn't return a JSON object!")
 
     albums = r.json()
+    print(albums)
     for album in albums['albums']:
         if album['title'] == name:
             return album['id']

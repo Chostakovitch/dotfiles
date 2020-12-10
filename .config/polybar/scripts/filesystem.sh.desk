@@ -1,7 +1,7 @@
 #/bin/sh
 
-icons=(  )
-parts=(/ /mnt/data)
+icons=(  )
+parts=(/ /mnt/data /mnt/backup)
 output=""
 for i in "${!parts[@]}"; do 
 	avail=$(df -h ${parts[$i]} | tail -1 | tr -s ' ' | cut -d' ' -f4)

@@ -71,7 +71,6 @@ exec --no-startup-id amixer -D hw:PCH -M sset Master 50%
 
 # standard apps for working
 exec standardnotes-desktop
-exec --no-startup-id i3-msg 'workspace 2; exec atom'
 exec --no-startup-id i3-msg 'workspace 3; exec firefox'
 exec thunderbird
 exec signal-desktop
