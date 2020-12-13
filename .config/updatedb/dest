@@ -1,1 +1,1 @@
-/etc/systemd/system/updatedb.timer.d
+/etc/systemd/system/updatedb.timer.d/
