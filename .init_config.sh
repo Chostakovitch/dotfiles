@@ -65,6 +65,7 @@ for f in `find ${CONFIG} -type f -name ${DEST_FILENAME}`; do
 	# This is because if desktop/laptop files exist, they already have a symlink pointing to them at this stage
 	for config_file in `find ${DIR} -maxdepth 1 -mindepth 1 -not \( -name "*.${LAPTOP}" -o -name "*.${DESKTOP}" -o -name "${DEST_FILENAME}" \)`; do
 		# Now copy to destination
+                sudo mkdir -p ${DEST}
 		check_copy "${config_file}" "sudo cp ${config_file} ${DEST}" "sudo rm ${DEST}/${config_file##*/}"
 	done
 done
