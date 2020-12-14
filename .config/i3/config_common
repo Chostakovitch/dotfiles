@@ -76,8 +76,10 @@ exec thunderbird
 exec signal-desktop
 exec telegram-desktop
 
-exec --no-startup-ip i3-msg 'workspace number 1; exec i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace number 1; exec i3-sensible-terminal'
 
+# fetch keys from HSM
+exec --no-startup-id gpg --card-status
 ##################################
 # BINDINGS FOR STARTING PROGRAMS
 ##################################
