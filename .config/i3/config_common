@@ -104,7 +104,7 @@ bindsym Shift+Print exec ~/.config/i3/scripts/screenshot.py -s
 # screenshot and upload to Lychee
 bindsym Print exec ~/.config/i3/scripts/screenshot.py -u
 # screenshot with flameshot
-bindsym $mod+Print exec flameshot gui
+bindsym $mod+Shift+i exec flameshot gui
 
 mode "$film_mode" {
   bindsym u exec ~/.config/i3/scripts/film_mode.sh on
