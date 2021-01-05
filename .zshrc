@@ -55,6 +55,7 @@ plugins=(
   copydir
   cp
   extract
+  fzf
   history
   docker
   rand-quote
@@ -116,3 +117,15 @@ alias lt='ls -lath'
 export PATH=${PATH}:~/picasoft/pass:$HOME/go/bin/:$HOME/.local/bin
 
 source <(mmctl completion zsh)
+
+## fzf conf
+_fzf_compgen_path() {
+  fd --hidden --follow --exclude ".git" . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow --exclude ".git" . "$1"
+}
+
+export FZF_COMPLETION_OPTS='-m'
