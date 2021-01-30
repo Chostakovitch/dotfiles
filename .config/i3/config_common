@@ -85,6 +85,8 @@ exec --no-startup-id gpg --card-status
 ##################################
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+# start SSH connexion to all VMs
+bindsym $mod+Shift+Return exec terminator -l picasoft
 
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show run -theme sidebar

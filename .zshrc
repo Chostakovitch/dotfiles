@@ -129,3 +129,5 @@ _fzf_compgen_dir() {
 }
 
 export FZF_COMPLETION_OPTS='-m'
+
+eval $(thefuck --alias)
